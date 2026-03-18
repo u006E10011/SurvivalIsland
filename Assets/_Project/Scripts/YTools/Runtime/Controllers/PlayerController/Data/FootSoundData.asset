@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7011c5971969fbc458c79ff9941c98a0, type: 3}
+  m_Name: FootSoundData
+  m_EditorClassIdentifier: 
+  Volume: 1
+  AudioMixerDefault: {fileID: 8130513147835575004, guid: 9e9f8dc138989ca4c8b8ba003f925ebe, type: 2}
+  AudioMixerGrass: {fileID: -6718702945510341272, guid: 9e9f8dc138989ca4c8b8ba003f925ebe, type: 2}
+  JumpUpClip: {fileID: 0}
+  JumpDownClip: {fileID: 8300000, guid: dccd380cb06177d4996fd00abf9c3183, type: 3}
+  BoardClip: []
+  SandClip: []
+  ShowClip: []
+  GrassClip: []
+  StoneClip:
+  - {fileID: 8300000, guid: 59a71e81520b4084b981d18c4a901a43, type: 3}
+  - {fileID: 8300000, guid: f5ae7e9b3786e53468e0166109311181, type: 3}
+  - {fileID: 8300000, guid: bdd3fe5b665d3c84d9d6ec52baba3e90, type: 3}
+  - {fileID: 8300000, guid: 779f228078f431c479ea26177ed80adb, type: 3}
+  - {fileID: 8300000, guid: 9b4f0893124a02648be03b2b2d6014da, type: 3}
+  - {fileID: 8300000, guid: d8e30ff5959a9ce47886d1be420bc40b, type: 3}
