@@ -11,11 +11,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2026
 		Month: 3
-		Day: 17
-		Hour: 0
-		Minute: 19
-		Second: 35
-		Millisecond: 176
+		Day: 19
+		Hour: 3
+		Minute: 35
+		Second: 7
+		Millisecond: 606
 	}
 	Creator: "Blockbench 5.0.7"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -49,7 +49,7 @@ FBXHeaderExtension:  {
 	}
 }
 FileId: "iVFoobar"
-CreationTime: "2026-03-16 16:19:35:176"
+CreationTime: "2026-03-18 19:35:07:606"
 Creator: "Made with Blockbench"
 GlobalSettings:  {
 	Version: 1000
@@ -78,7 +78,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 736115109 {
+	Document: 1892581378 {
 		Scene: "Scene"
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
@@ -98,7 +98,7 @@ References:
 
 Definitions:  {
 	Version: 100
-	Count: 57
+	Count: 84
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -194,7 +194,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Material" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxSurfaceLambert" {
 			Properties70:  {
 				P: "ShadingModel", "KString", "", "", "Lambert"
@@ -218,7 +218,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Texture" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxFileTexture" {
 			Properties70:  {
 				P: "TextureTypeUse", "enum", "", "",0
@@ -241,7 +241,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Video" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxVideo" {
 			Properties70:  {
 				P: "ImageSequence", "bool", "", "",0
@@ -268,27 +268,27 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Model: 72248892, "Model::shovel", "Null" {
+	Model: 74516972, "Model::shovel", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",-81.87500000000001,12.5,-3.125
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.1621875,-0.12612499999999915,0.20425
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-90,0
 			P: "RotationOrder", "enum", "", "",0
 		}
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72681085, "Model::cube", "Mesh" {
+	Model: 79655841, "Model::cube", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",10.9375,18.75,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",4.8496875,22.001125,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,45
 			P: "RotationOrder", "enum", "", "",5
@@ -297,7 +297,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 71091528, "Geometry::cube", "Mesh" {
+	Geometry: 74582345, "Geometry::cube", "Mesh" {
 		Vertices: *24 {
 			a: 12.186874999999999,18.436875,5.4335,12.186874999999999,18.436875,1.4415,12.186874999999999,1.5631249999999999,4.061875,12.186874999999999,1.5631249999999999,2.813125,-4.686875,18.436875,4.061875,-4.686875,18.436875,2.813125,-4.686875,1.5631249999999999,5.468125,-4.686875,1.5631249999999999,3.2122499999999996
 		}
@@ -348,13 +348,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 74419609, "Model::body", "Mesh" {
+	Model: 75664928, "Model::body", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",6.25,87.5,3.125
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.1621875,90.751125,-0.20425
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",5
@@ -363,9 +363,9 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 76257866, "Geometry::body", "Mesh" {
+	Geometry: 78455858, "Geometry::body", "Mesh" {
 		Vertices: *42 {
-			a: -5,-59.53124999999999,2.7832031250000004,-5,-59.53124999999999,-2.8124999999999996,-5,-4.218750000000004,2.9687499999999996,-5,-4.218750000000004,-3.4375,5,-59.53124999999999,2.7832031250000004,5,-59.53124999999999,-2.8124999999999996,5,-4.218750000000004,2.9687499999999996,5,-4.218750000000004,-3.4375,-5,-51.63593290441176,-3.4375,5,-51.61641084558822,-3.4375,-5,-57.05813051470587,-3.4375,5,-56.95580238970588,-3.4375,-0.031,-57.071416360294116,-3.4375,-1.2577500000000001,-41.135627527573526,-3.4179687500000004
+			a: -5,-59.53125,2.7831875,-5,-59.53125,-2.8125,-5,-4.21875,2.96875,-5,-4.21875,-3.4375,5,-59.53125,2.7831875,5,-59.53125,-2.8125,5,-4.21875,2.96875,5,-4.21875,-3.4375,-5,-51.6359375,-3.4375,5,-51.616437499999996,-3.4375,-5,-57.058125000000004,-3.4375,5,-56.9558125,-3.4375,-0.031,-57.0714375,-3.4375,-1.25775,-41.135625,-3.418
 		}
 		PolygonVertexIndex: *60 {
 			a: 1,5,4,-1,2,6,7,-4,0,4,6,-3,2,3,-9,9,7,-7,3,7,-10,8,10,0,-3,10,1,-1,11,9,6,-5,4,5,-12,5,1,-13,1,10,-13,10,8,-13,9,11,-13,11,5,-13,3,9,-14,12,8,13,-10,8,3,-14
@@ -377,7 +377,7 @@ Objects:  {
 			MappingInformationType: "ByPolygon"
 			ReferenceInformationType: "Direct"
 			Normals: *54 {
-				a: 0,-1,0,0,1,0,0,-0.003354500900295628,0.9999943736460271,-1,0,0,1,0,0,0,0,-1,-1,0,0,-1,0,0,1,0,0,1,0,0,0,-0.24625761134054472,-0.9692044102545392,-0.0006551059749920432,-0.24501425732486398,-0.96951925434398,0,0,-1,0,0,-1,0.0054193990764564715,-0.23582787283344933,-0.9717797304474407,-0.004826637213188655,-0.001018328146807253,-0.9999878332164835,0.0014639552482180768,0.0013383158439242754,-0.9999980328709318,0.00521904843277129,0,-0.9999863806739853
+				a: 0,-1,0,0,1,0,0,-0.003354783381402876,0.9999943726983986,-1,0,0,1,0,0,0,0,-1,-1,0,0,-1,0,0,1,0,0,1,0,0,0,-0.2462595993434867,-0.9692039051361614,-0.0006564188893588606,-0.2450137435662098,-0.9695193832914911,0,0,-1,0,0,-1,0.005419936157212069,-0.23582874643835358,-0.9717795154485231,-0.004818920632183073,-0.001016699524039664,-0.9999878720894662,0.0014616154164849135,0.001336172754026958,-0.9999980391594504,0.005210698182187603,0,-0.9999864242200762
 			}
 		}
 		LayerElementUV: 0 {
@@ -386,7 +386,7 @@ Objects:  {
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
 			UV: *120 {
-				a: 0.46875,0.53125,0.53125,0.53125,0.53125,0.5625,0.46875,0.5625,0.375,0.6875,0.4375,0.6875,0.4375,0.75,0.375,0.75,0,0.6875,0.0625,0.6875,0.0625,1,0,1,0.11875,1,0.06875,1,0.06875,0.726746875,0.18125,0.726859375,0.18125,1,0.13125,1,0.24375,1,0.19375,1,0.19375,0.726859375,0.06875,0.726746875,0.06875,0.695503125,0.10703125,0.68125,0.11875,1,0.06875,0.695503125,0.08125,0.68125,0.10703125,0.68125,0.18125,0.6960906250000001,0.18125,0.726859375,0.13125,1,0.14296875,0.68125,0.14296875,0.68125,0.16875,0.68125,0.18125,0.6960906250000001,0.5375015625,0.40625,0.5875015625,0.40625,0.5626578125,0.42514687500000004,0.5875015625,0.40625,0.5875009375,0.42520625,0.562656875,0.4251475,0.24375,0.695503125,0.24375,0.726746875,0.21890625,0.695425,0.19375,0.726859375,0.19375,0.6960906250000001,0.21890625,0.695425,0.5374984375,0.425651875,0.5375015625,0.40625,0.5626584375,0.4251475,0.24375,1,0.19375,0.726859375,0.2250396913991749,0.7872585316742475,0.21890625,0.695425,0.24375,0.726746875,0.2250396913991749,0.7872585316742475,0.19375,0.726859375,0.24375,0.726746875,0.24375,1,0.2250396913991749,0.7872585316742475
+				a: 0.46875,0.53125,0.53125,0.53125,0.53125,0.5625,0.46875,0.5625,0.375,0.6875,0.4375,0.6875,0.4375,0.75,0.375,0.75,0,0.6875,0.0625,0.6875,0.0625,1,0,1,0.11875,1,0.06875,1,0.06875,0.726746875,0.18125,0.726859375,0.18125,1,0.13125,1,0.24375,1,0.19375,1,0.19375,0.726859375,0.06875,0.726746875,0.06875,0.695503125,0.10703125,0.68125,0.11875,1,0.06875,0.695503125,0.08125,0.68125,0.10703125,0.68125,0.18125,0.6960906250000001,0.18125,0.726859375,0.13125,1,0.14296875,0.68125,0.14296875,0.68125,0.16875,0.68125,0.18125,0.6960906250000001,0.5375015625,0.40625,0.5875015625,0.40625,0.5626578125,0.42514687500000004,0.5875015625,0.40625,0.5875009375,0.42520625,0.562656875,0.4251475,0.24375,0.695503125,0.24375,0.726746875,0.21890625,0.695425,0.19375,0.726859375,0.19375,0.6960906250000001,0.21890625,0.695425,0.5374984375,0.425651875,0.5375015625,0.40625,0.5626584375,0.4251475,0.24375,1,0.19375,0.726859375,0.2250396875,0.7872584375,0.21890625,0.695425,0.24375,0.726746875,0.2250396875,0.7872584375,0.19375,0.726859375,0.24375,0.726746875,0.24375,1,0.2250396875,0.7872584375
 			}
 		}
 		LayerElementMaterial: 0 {
@@ -414,13 +414,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 72202722, "Model::cube_1", "Mesh" {
+	Model: 75665805, "Model::cube_1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -429,9 +429,9 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 70551330, "Geometry::cube_1", "Mesh" {
+	Geometry: 70639269, "Geometry::cube_1", "Mesh" {
 		Vertices: *24 {
-			a: -7.8125,26.5625,6.25,-7.8125,26.5625,0,-7.8125,6.25,6.25,-7.8125,6.25,0,-9.374999999999977,26.5625,0,-9.374999999999977,26.5625,6.25,-9.374999999999977,6.25,0,-9.374999999999977,6.25,6.25
+			a: -7.8125,26.5625,6.25,-7.8125,26.5625,0,-7.8125,6.25,6.25,-7.8125,6.25,0,-9.375,26.5625,0,-9.375,26.5625,6.25,-9.375,6.25,0,-9.375,6.25,6.25
 		}
 		PolygonVertexIndex: *24 {
 			a: 3,6,4,-2,2,3,1,-1,7,2,0,-6,6,7,5,-5,5,0,1,-5,6,3,2,-8
@@ -480,13 +480,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79523257, "Model::cube_2", "Mesh" {
+	Model: 79383979, "Model::cube_2", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -495,7 +495,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 78987953, "Geometry::cube_2", "Mesh" {
+	Geometry: 77278135, "Geometry::cube_2", "Mesh" {
 		Vertices: *24 {
 			a: -6.25,6.25,6.25,-6.25,6.25,0,-6.25,3.125,6.25,-6.25,3.125,0,-7.8125,6.25,0,-7.8125,6.25,6.25,-7.8125,3.125,0,-7.8125,3.125,6.25
 		}
@@ -546,13 +546,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75977773, "Model::cube_3", "Mesh" {
+	Model: 72216066, "Model::cube_3", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -561,7 +561,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72844886, "Geometry::cube_3", "Mesh" {
+	Geometry: 73246820, "Geometry::cube_3", "Mesh" {
 		Vertices: *24 {
 			a: -3.125,3.125,6.25,-3.125,3.125,0,-3.125,0,6.25,-3.125,0,0,-4.6875,3.125,0,-4.6875,3.125,6.25,-4.6875,0,0,-4.6875,0,6.25
 		}
@@ -612,13 +612,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78305130, "Model::cube_4", "Mesh" {
+	Model: 73306168, "Model::cube_4", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -627,7 +627,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 76556548, "Geometry::cube_4", "Mesh" {
+	Geometry: 76210619, "Geometry::cube_4", "Mesh" {
 		Vertices: *24 {
 			a: 0,0,6.25,0,0,0,0,-3.125,6.25,0,-3.125,0,-1.5625,0,0,-1.5625,0,6.25,-1.5625,-3.125,0,-1.5625,-3.125,6.25
 		}
@@ -678,13 +678,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79000950, "Model::cube_5", "Mesh" {
+	Model: 73134079, "Model::cube_5", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -693,7 +693,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 73305023, "Geometry::cube_5", "Mesh" {
+	Geometry: 77338944, "Geometry::cube_5", "Mesh" {
 		Vertices: *24 {
 			a: 20.3125,26.5625,6.25,20.3125,26.5625,1.875,20.3125,6.25,6.25,20.3125,6.25,1.875,-7.8125,26.5625,1.875,-7.8125,26.5625,6.25,-7.8125,6.25,1.875,-7.8125,6.25,6.25
 		}
@@ -744,13 +744,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 70033315, "Model::cube_6", "Mesh" {
+	Model: 71876956, "Model::cube_6", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -759,7 +759,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 79013944, "Geometry::cube_6", "Mesh" {
+	Geometry: 72398358, "Geometry::cube_6", "Mesh" {
 		Vertices: *24 {
 			a: 20.3125,6.25,6.25,20.3125,6.25,0,20.3125,3.125,6.25,20.3125,3.125,0,18.75,6.25,0,18.75,6.25,6.25,18.75,3.125,0,18.75,3.125,6.25
 		}
@@ -810,13 +810,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 76062826, "Model::cube_7", "Mesh" {
+	Model: 77261808, "Model::cube_7", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -825,7 +825,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 74263779, "Geometry::cube_7", "Mesh" {
+	Geometry: 72629885, "Geometry::cube_7", "Mesh" {
 		Vertices: *24 {
 			a: -3.125,4.6875,6.25,-3.125,4.6875,0,-3.125,3.125,6.25,-3.125,3.125,0,-6.25,4.6875,0,-6.25,4.6875,6.25,-6.25,3.125,0,-6.25,3.125,6.25
 		}
@@ -876,13 +876,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78883796, "Model::cube_8", "Mesh" {
+	Model: 79369149, "Model::cube_8", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -891,7 +891,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72204984, "Geometry::cube_8", "Mesh" {
+	Geometry: 76009632, "Geometry::cube_8", "Mesh" {
 		Vertices: *24 {
 			a: 0,1.5625,6.25,0,1.5625,0,0,0,6.25,0,0,0,-3.125,1.5625,0,-3.125,1.5625,6.25,-3.125,0,0,-3.125,0,6.25
 		}
@@ -942,13 +942,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75769726, "Model::cube_9", "Mesh" {
+	Model: 73115110, "Model::cube_9", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -957,7 +957,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 76206987, "Geometry::cube_9", "Mesh" {
+	Geometry: 70289103, "Geometry::cube_9", "Mesh" {
 		Vertices: *24 {
 			a: 12.5,-1.5625,6.25,12.5,-1.5625,0,12.5,-3.125,6.25,12.5,-3.125,0,0,-1.5625,0,0,-1.5625,6.25,0,-3.125,0,0,-3.125,6.25
 		}
@@ -1008,13 +1008,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 74939168, "Model::cube_10", "Mesh" {
+	Model: 70460433, "Model::cube_10", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1023,7 +1023,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 79278224, "Geometry::cube_10", "Mesh" {
+	Geometry: 79260549, "Geometry::cube_10", "Mesh" {
 		Vertices: *24 {
 			a: 14.0625,0,6.25,14.0625,0,0,14.0625,-3.125,6.25,14.0625,-3.125,0,12.5,0,0,12.5,0,6.25,12.5,-3.125,0,12.5,-3.125,6.25
 		}
@@ -1074,13 +1074,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71496211, "Model::cube_11", "Mesh" {
+	Model: 74815352, "Model::cube_11", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1089,7 +1089,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 77553348, "Geometry::cube_11", "Mesh" {
+	Geometry: 76043205, "Geometry::cube_11", "Mesh" {
 		Vertices: *24 {
 			a: 12.5,0,6.25,12.5,0,2.03125,12.5,-1.5625,6.25,12.5,-1.5625,2.03125,0,0,2.03125,0,0,6.25,0,-1.5625,2.03125,0,-1.5625,6.25
 		}
@@ -1140,13 +1140,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71921263, "Model::cube_12", "Mesh" {
+	Model: 79816136, "Model::cube_12", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1155,7 +1155,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 79137705, "Geometry::cube_12", "Mesh" {
+	Geometry: 73210105, "Geometry::cube_12", "Mesh" {
 		Vertices: *24 {
 			a: 17.1875,3.125,6.25,17.1875,3.125,0,17.1875,0,6.25,17.1875,0,0,15.625,3.125,0,15.625,3.125,6.25,15.625,0,0,15.625,0,6.25
 		}
@@ -1206,13 +1206,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71520125, "Model::cube_13", "Mesh" {
+	Model: 74678111, "Model::cube_13", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1221,7 +1221,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72725667, "Geometry::cube_13", "Mesh" {
+	Geometry: 70689627, "Geometry::cube_13", "Mesh" {
 		Vertices: *24 {
 			a: 18.75,6.25,6.25,18.75,6.25,1.875,18.75,4.6875,6.25,18.75,4.6875,1.875,-6.25,6.25,1.875,-6.25,6.25,6.25,-6.25,4.6875,1.875,-6.25,4.6875,6.25
 		}
@@ -1272,13 +1272,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 73273271, "Model::cube_14", "Mesh" {
+	Model: 75324757, "Model::cube_14", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1287,7 +1287,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 79619776, "Geometry::cube_14", "Mesh" {
+	Geometry: 73285979, "Geometry::cube_14", "Mesh" {
 		Vertices: *24 {
 			a: 18.75,4.6875,6.25,18.75,4.6875,0,18.75,3.125,6.25,18.75,3.125,0,15.625,4.6875,0,15.625,4.6875,6.25,15.625,3.125,0,15.625,3.125,6.25
 		}
@@ -1338,13 +1338,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79064216, "Model::cube_15", "Mesh" {
+	Model: 78177969, "Model::cube_15", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1353,7 +1353,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 78803070, "Geometry::cube_15", "Mesh" {
+	Geometry: 77201322, "Geometry::cube_15", "Mesh" {
 		Vertices: *24 {
 			a: 15.625,4.6875,6.25,15.625,4.6875,1.875,15.625,3.125,6.25,15.625,3.125,1.875,-3.125,4.6875,1.875,-3.125,4.6875,6.25,-3.125,3.125,1.875,-3.125,3.125,6.25
 		}
@@ -1404,13 +1404,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78025160, "Model::cube_16", "Mesh" {
+	Model: 74569500, "Model::cube_16", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1419,7 +1419,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 73531266, "Geometry::cube_16", "Mesh" {
+	Geometry: 73139421, "Geometry::cube_16", "Mesh" {
 		Vertices: *24 {
 			a: 15.625,3.125,6.25,15.625,3.125,1.875,15.625,1.5625,6.25,15.625,1.5625,1.875,-3.125,3.125,1.875,-3.125,3.125,6.25,-3.125,1.5625,1.875,-3.125,1.5625,6.25
 		}
@@ -1470,13 +1470,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79087215, "Model::cube_17", "Mesh" {
+	Model: 77335190, "Model::cube_17", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1485,7 +1485,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 79341921, "Geometry::cube_17", "Mesh" {
+	Geometry: 71495932, "Geometry::cube_17", "Mesh" {
 		Vertices: *24 {
 			a: 15.625,1.5625,6.25,15.625,1.5625,0,15.625,0,6.25,15.625,0,0,12.5,1.5625,0,12.5,1.5625,6.25,12.5,0,0,12.5,0,6.25
 		}
@@ -1536,13 +1536,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 73630785, "Model::cube_18", "Mesh" {
+	Model: 73410879, "Model::cube_18", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1551,7 +1551,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 70478169, "Geometry::cube_18", "Mesh" {
+	Geometry: 71106638, "Geometry::cube_18", "Mesh" {
 		Vertices: *24 {
 			a: 12.5,1.5625,6.25,12.5,1.5625,1.875,12.5,0,6.25,12.5,0,1.875,0,1.5625,1.875,0,1.5625,6.25,0,0,1.875,0,0,6.25
 		}
@@ -1602,13 +1602,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79219528, "Model::cube_19", "Mesh" {
+	Model: 71553666, "Model::cube_19", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1617,7 +1617,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 70161611, "Geometry::cube_19", "Mesh" {
+	Geometry: 76854595, "Geometry::cube_19", "Mesh" {
 		Vertices: *24 {
 			a: 20.3125,31.25,6.25,20.3125,31.25,0,20.3125,26.5625,6.25,20.3125,26.5625,0,3.125,31.25,0,3.125,31.25,6.25,3.125,26.5625,0,3.125,26.5625,6.25
 		}
@@ -1668,13 +1668,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75591526, "Model::cube_20", "Mesh" {
+	Model: 71227929, "Model::cube_20", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1683,7 +1683,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 70089319, "Geometry::cube_20", "Mesh" {
+	Geometry: 74427785, "Geometry::cube_20", "Mesh" {
 		Vertices: *24 {
 			a: 21.875,31.25,6.25,21.875,31.25,0,21.875,6.25,6.25,21.875,6.25,0,20.3125,31.25,0,20.3125,31.25,6.25,20.3125,6.25,0,20.3125,6.25,6.25
 		}
@@ -1734,13 +1734,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78893564, "Model::cube_21", "Mesh" {
+	Model: 78507763, "Model::cube_21", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.0878125,3.251124999999999,-3.32925
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -1749,9 +1749,9 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 74843675, "Geometry::cube_21", "Mesh" {
+	Geometry: 70066579, "Geometry::cube_21", "Mesh" {
 		Vertices: *24 {
-			a: 3.125,31.25,6.25,3.125,31.25,0,3.125,26.5625,6.25,3.125,26.5625,0,-9.374999999999977,31.25,0,-9.374999999999977,31.25,6.25,-9.374999999999977,26.5625,0,-9.374999999999977,26.5625,6.25
+			a: 3.125,31.25,6.25,3.125,31.25,0,3.125,26.5625,6.25,3.125,26.5625,0,-9.375,31.25,0,-9.375,31.25,6.25,-9.375,26.5625,0,-9.375,26.5625,6.25
 		}
 		PolygonVertexIndex: *24 {
 			a: 3,6,4,-2,2,3,1,-1,7,2,0,-6,6,7,5,-5,5,0,1,-5,6,3,2,-8
@@ -1800,7 +1800,7 @@ Objects:  {
 			}
 		}
 	}
-	Material: 78708739, "Material::pickaxe.png", "" {
+	Material: 79555133, "Material::tree_1.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1811,28 +1811,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 71119562, "Texture::pickaxe.png", "" {
+	Texture: 77508377, "Texture::tree_1.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
-		TextureName: "Texture::pickaxe.png"
-		Media: "Video::pickaxe.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
-		RelativeFilename: "pickaxe.png"
+		TextureName: "Texture::tree_1.png"
+		Media: "Video::tree_1.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
+		RelativeFilename: "tree_1.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 72310419, "Video::pickaxe.png", "Clip" {
+	Video: 74729996, "Video::tree_1.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
-		RelativeFilename: "pickaxe.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
+		RelativeFilename: "tree_1.png"
 	}
-	Material: 76530836, "Material::shovel.png", "" {
+	Material: 73064496, "Material::tree_2.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1843,28 +1843,156 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79609751, "Texture::shovel.png", "" {
+	Texture: 73163976, "Texture::tree_2.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::tree_2.png"
+		Media: "Video::tree_2.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		RelativeFilename: "tree_2.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 70882741, "Video::tree_2.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		RelativeFilename: "tree_2.png"
+	}
+	Material: 74091650, "Material::sugar-cane.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 74755884, "Texture::sugar-cane.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::sugar-cane.png"
+		Media: "Video::sugar-cane.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		RelativeFilename: "sugar-cane.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 73748332, "Video::sugar-cane.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		RelativeFilename: "sugar-cane.png"
+	}
+	Material: 76070979, "Material::stone.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 79786934, "Texture::stone.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::stone.png"
+		Media: "Video::stone.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		RelativeFilename: "stone.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 77037576, "Video::stone.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		RelativeFilename: "stone.png"
+	}
+	Material: 71136965, "Material::grass.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 72537071, "Texture::grass.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::grass.png"
+		Media: "Video::grass.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		RelativeFilename: "grass.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 79324170, "Video::grass.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		RelativeFilename: "grass.png"
+	}
+	Material: 72776177, "Material::shovel.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 74927263, "Texture::shovel.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::shovel.png"
 		Media: "Video::shovel.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		RelativeFilename: "shovel.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 78167167, "Video::shovel.png", "Clip" {
+	Video: 74491528, "Video::shovel.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		RelativeFilename: "shovel.png"
 	}
-	Material: 74244597, "Material::axe.png", "" {
+	Material: 77867318, "Material::pickaxe.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1875,26 +2003,186 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 73758405, "Texture::axe.png", "" {
+	Texture: 75056328, "Texture::pickaxe.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::pickaxe.png"
+		Media: "Video::pickaxe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		RelativeFilename: "pickaxe.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 75530178, "Video::pickaxe.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		RelativeFilename: "pickaxe.png"
+	}
+	Material: 72901306, "Material::scythe.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 77284142, "Texture::scythe.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::scythe.png"
+		Media: "Video::scythe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		RelativeFilename: "scythe.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 70121188, "Video::scythe.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		RelativeFilename: "scythe.png"
+	}
+	Material: 76451875, "Material::axe.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 75474256, "Texture::axe.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::axe.png"
 		Media: "Video::axe.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		RelativeFilename: "axe.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 77909772, "Video::axe.png", "Clip" {
+	Video: 73284239, "Video::axe.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		RelativeFilename: "axe.png"
+	}
+	Material: 72019539, "Material::sand.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 71242421, "Texture::sand.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::sand.png"
+		Media: "Video::sand.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		RelativeFilename: "sand.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 71279489, "Video::sand.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		RelativeFilename: "sand.png"
+	}
+	Material: 74342656, "Material::seamless _sand.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 78213107, "Texture::seamless _sand.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::seamless _sand.png"
+		Media: "Video::seamless _sand.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		RelativeFilename: "seamless _sand.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 75274578, "Video::seamless _sand.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		RelativeFilename: "seamless _sand.png"
+	}
+	Material: 77227261, "Material::seamless_grass.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 77389254, "Texture::seamless_grass.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::seamless_grass.png"
+		Media: "Video::seamless_grass.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		RelativeFilename: "seamless_grass.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 71721341, "Video::seamless_grass.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		RelativeFilename: "seamless_grass.png"
 	}
 }
 
@@ -1904,232 +2192,286 @@ Objects:  {
 Connections:  {
 
 	;Model::shovel, Model::RootNode
-	C: "OO",72248892,0
+	C: "OO",74516972,0
 
 	;Model::cube, Model::shovel
-	C: "OO",72681085,72248892
+	C: "OO",79655841,74516972
 
 	;Geometry::cube, Model::cube
-	C: "OO",71091528,72681085
+	C: "OO",74582345,79655841
 
 	;Material::shovel.png, Model::cube
-	C: "OO",76530836,72681085
+	C: "OO",72776177,79655841
 
 	;Model::body, Model::shovel
-	C: "OO",74419609,72248892
+	C: "OO",75664928,74516972
 
 	;Geometry::body, Model::body
-	C: "OO",76257866,74419609
+	C: "OO",78455858,75664928
 
 	;Material::shovel.png, Model::body
-	C: "OO",76530836,74419609
+	C: "OO",72776177,75664928
 
 	;Model::cube_1, Model::shovel
-	C: "OO",72202722,72248892
+	C: "OO",75665805,74516972
 
 	;Geometry::cube_1, Model::cube_1
-	C: "OO",70551330,72202722
+	C: "OO",70639269,75665805
 
 	;Material::shovel.png, Model::cube_1
-	C: "OO",76530836,72202722
+	C: "OO",72776177,75665805
 
 	;Model::cube_2, Model::shovel
-	C: "OO",79523257,72248892
+	C: "OO",79383979,74516972
 
 	;Geometry::cube_2, Model::cube_2
-	C: "OO",78987953,79523257
+	C: "OO",77278135,79383979
 
 	;Material::shovel.png, Model::cube_2
-	C: "OO",76530836,79523257
+	C: "OO",72776177,79383979
 
 	;Model::cube_3, Model::shovel
-	C: "OO",75977773,72248892
+	C: "OO",72216066,74516972
 
 	;Geometry::cube_3, Model::cube_3
-	C: "OO",72844886,75977773
+	C: "OO",73246820,72216066
 
 	;Material::shovel.png, Model::cube_3
-	C: "OO",76530836,75977773
+	C: "OO",72776177,72216066
 
 	;Model::cube_4, Model::shovel
-	C: "OO",78305130,72248892
+	C: "OO",73306168,74516972
 
 	;Geometry::cube_4, Model::cube_4
-	C: "OO",76556548,78305130
+	C: "OO",76210619,73306168
 
 	;Material::shovel.png, Model::cube_4
-	C: "OO",76530836,78305130
+	C: "OO",72776177,73306168
 
 	;Model::cube_5, Model::shovel
-	C: "OO",79000950,72248892
+	C: "OO",73134079,74516972
 
 	;Geometry::cube_5, Model::cube_5
-	C: "OO",73305023,79000950
+	C: "OO",77338944,73134079
 
 	;Material::shovel.png, Model::cube_5
-	C: "OO",76530836,79000950
+	C: "OO",72776177,73134079
 
 	;Model::cube_6, Model::shovel
-	C: "OO",70033315,72248892
+	C: "OO",71876956,74516972
 
 	;Geometry::cube_6, Model::cube_6
-	C: "OO",79013944,70033315
+	C: "OO",72398358,71876956
 
 	;Material::shovel.png, Model::cube_6
-	C: "OO",76530836,70033315
+	C: "OO",72776177,71876956
 
 	;Model::cube_7, Model::shovel
-	C: "OO",76062826,72248892
+	C: "OO",77261808,74516972
 
 	;Geometry::cube_7, Model::cube_7
-	C: "OO",74263779,76062826
+	C: "OO",72629885,77261808
 
 	;Material::shovel.png, Model::cube_7
-	C: "OO",76530836,76062826
+	C: "OO",72776177,77261808
 
 	;Model::cube_8, Model::shovel
-	C: "OO",78883796,72248892
+	C: "OO",79369149,74516972
 
 	;Geometry::cube_8, Model::cube_8
-	C: "OO",72204984,78883796
+	C: "OO",76009632,79369149
 
 	;Material::shovel.png, Model::cube_8
-	C: "OO",76530836,78883796
+	C: "OO",72776177,79369149
 
 	;Model::cube_9, Model::shovel
-	C: "OO",75769726,72248892
+	C: "OO",73115110,74516972
 
 	;Geometry::cube_9, Model::cube_9
-	C: "OO",76206987,75769726
+	C: "OO",70289103,73115110
 
 	;Material::shovel.png, Model::cube_9
-	C: "OO",76530836,75769726
+	C: "OO",72776177,73115110
 
 	;Model::cube_10, Model::shovel
-	C: "OO",74939168,72248892
+	C: "OO",70460433,74516972
 
 	;Geometry::cube_10, Model::cube_10
-	C: "OO",79278224,74939168
+	C: "OO",79260549,70460433
 
 	;Material::shovel.png, Model::cube_10
-	C: "OO",76530836,74939168
+	C: "OO",72776177,70460433
 
 	;Model::cube_11, Model::shovel
-	C: "OO",71496211,72248892
+	C: "OO",74815352,74516972
 
 	;Geometry::cube_11, Model::cube_11
-	C: "OO",77553348,71496211
+	C: "OO",76043205,74815352
 
 	;Material::shovel.png, Model::cube_11
-	C: "OO",76530836,71496211
+	C: "OO",72776177,74815352
 
 	;Model::cube_12, Model::shovel
-	C: "OO",71921263,72248892
+	C: "OO",79816136,74516972
 
 	;Geometry::cube_12, Model::cube_12
-	C: "OO",79137705,71921263
+	C: "OO",73210105,79816136
 
 	;Material::shovel.png, Model::cube_12
-	C: "OO",76530836,71921263
+	C: "OO",72776177,79816136
 
 	;Model::cube_13, Model::shovel
-	C: "OO",71520125,72248892
+	C: "OO",74678111,74516972
 
 	;Geometry::cube_13, Model::cube_13
-	C: "OO",72725667,71520125
+	C: "OO",70689627,74678111
 
 	;Material::shovel.png, Model::cube_13
-	C: "OO",76530836,71520125
+	C: "OO",72776177,74678111
 
 	;Model::cube_14, Model::shovel
-	C: "OO",73273271,72248892
+	C: "OO",75324757,74516972
 
 	;Geometry::cube_14, Model::cube_14
-	C: "OO",79619776,73273271
+	C: "OO",73285979,75324757
 
 	;Material::shovel.png, Model::cube_14
-	C: "OO",76530836,73273271
+	C: "OO",72776177,75324757
 
 	;Model::cube_15, Model::shovel
-	C: "OO",79064216,72248892
+	C: "OO",78177969,74516972
 
 	;Geometry::cube_15, Model::cube_15
-	C: "OO",78803070,79064216
+	C: "OO",77201322,78177969
 
 	;Material::shovel.png, Model::cube_15
-	C: "OO",76530836,79064216
+	C: "OO",72776177,78177969
 
 	;Model::cube_16, Model::shovel
-	C: "OO",78025160,72248892
+	C: "OO",74569500,74516972
 
 	;Geometry::cube_16, Model::cube_16
-	C: "OO",73531266,78025160
+	C: "OO",73139421,74569500
 
 	;Material::shovel.png, Model::cube_16
-	C: "OO",76530836,78025160
+	C: "OO",72776177,74569500
 
 	;Model::cube_17, Model::shovel
-	C: "OO",79087215,72248892
+	C: "OO",77335190,74516972
 
 	;Geometry::cube_17, Model::cube_17
-	C: "OO",79341921,79087215
+	C: "OO",71495932,77335190
 
 	;Material::shovel.png, Model::cube_17
-	C: "OO",76530836,79087215
+	C: "OO",72776177,77335190
 
 	;Model::cube_18, Model::shovel
-	C: "OO",73630785,72248892
+	C: "OO",73410879,74516972
 
 	;Geometry::cube_18, Model::cube_18
-	C: "OO",70478169,73630785
+	C: "OO",71106638,73410879
 
 	;Material::shovel.png, Model::cube_18
-	C: "OO",76530836,73630785
+	C: "OO",72776177,73410879
 
 	;Model::cube_19, Model::shovel
-	C: "OO",79219528,72248892
+	C: "OO",71553666,74516972
 
 	;Geometry::cube_19, Model::cube_19
-	C: "OO",70161611,79219528
+	C: "OO",76854595,71553666
 
 	;Material::shovel.png, Model::cube_19
-	C: "OO",76530836,79219528
+	C: "OO",72776177,71553666
 
 	;Model::cube_20, Model::shovel
-	C: "OO",75591526,72248892
+	C: "OO",71227929,74516972
 
 	;Geometry::cube_20, Model::cube_20
-	C: "OO",70089319,75591526
+	C: "OO",74427785,71227929
 
 	;Material::shovel.png, Model::cube_20
-	C: "OO",76530836,75591526
+	C: "OO",72776177,71227929
 
 	;Model::cube_21, Model::shovel
-	C: "OO",78893564,72248892
+	C: "OO",78507763,74516972
 
 	;Geometry::cube_21, Model::cube_21
-	C: "OO",74843675,78893564
+	C: "OO",70066579,78507763
 
 	;Material::shovel.png, Model::cube_21
-	C: "OO",76530836,78893564
+	C: "OO",72776177,78507763
 
-	;Texture::pickaxe.png, Material::pickaxe.png
-	C: "OP",71119562,78708739, "DiffuseColor"
+	;Texture::tree_1.png, Material::tree_1.png
+	C: "OP",77508377,79555133, "DiffuseColor"
 
-	;Video::pickaxe.png, Texture::pickaxe.png
-	C: "OO",72310419,71119562
+	;Video::tree_1.png, Texture::tree_1.png
+	C: "OO",74729996,77508377
+
+	;Texture::tree_2.png, Material::tree_2.png
+	C: "OP",73163976,73064496, "DiffuseColor"
+
+	;Video::tree_2.png, Texture::tree_2.png
+	C: "OO",70882741,73163976
+
+	;Texture::sugar-cane.png, Material::sugar-cane.png
+	C: "OP",74755884,74091650, "DiffuseColor"
+
+	;Video::sugar-cane.png, Texture::sugar-cane.png
+	C: "OO",73748332,74755884
+
+	;Texture::stone.png, Material::stone.png
+	C: "OP",79786934,76070979, "DiffuseColor"
+
+	;Video::stone.png, Texture::stone.png
+	C: "OO",77037576,79786934
+
+	;Texture::grass.png, Material::grass.png
+	C: "OP",72537071,71136965, "DiffuseColor"
+
+	;Video::grass.png, Texture::grass.png
+	C: "OO",79324170,72537071
 
 	;Texture::shovel.png, Material::shovel.png
-	C: "OP",79609751,76530836, "DiffuseColor"
+	C: "OP",74927263,72776177, "DiffuseColor"
 
 	;Video::shovel.png, Texture::shovel.png
-	C: "OO",78167167,79609751
+	C: "OO",74491528,74927263
+
+	;Texture::pickaxe.png, Material::pickaxe.png
+	C: "OP",75056328,77867318, "DiffuseColor"
+
+	;Video::pickaxe.png, Texture::pickaxe.png
+	C: "OO",75530178,75056328
+
+	;Texture::scythe.png, Material::scythe.png
+	C: "OP",77284142,72901306, "DiffuseColor"
+
+	;Video::scythe.png, Texture::scythe.png
+	C: "OO",70121188,77284142
 
 	;Texture::axe.png, Material::axe.png
-	C: "OP",73758405,74244597, "DiffuseColor"
+	C: "OP",75474256,76451875, "DiffuseColor"
 
 	;Video::axe.png, Texture::axe.png
-	C: "OO",77909772,73758405
+	C: "OO",73284239,75474256
+
+	;Texture::sand.png, Material::sand.png
+	C: "OP",71242421,72019539, "DiffuseColor"
+
+	;Video::sand.png, Texture::sand.png
+	C: "OO",71279489,71242421
+
+	;Texture::seamless _sand.png, Material::seamless _sand.png
+	C: "OP",78213107,74342656, "DiffuseColor"
+
+	;Video::seamless _sand.png, Texture::seamless _sand.png
+	C: "OO",75274578,78213107
+
+	;Texture::seamless_grass.png, Material::seamless_grass.png
+	C: "OP",77389254,77227261, "DiffuseColor"
+
+	;Video::seamless_grass.png, Texture::seamless_grass.png
+	C: "OO",71721341,77389254
 }
 
 ; Takes section

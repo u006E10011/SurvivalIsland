@@ -11,11 +11,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2026
 		Month: 3
-		Day: 17
-		Hour: 0
-		Minute: 19
-		Second: 12
-		Millisecond: 665
+		Day: 19
+		Hour: 3
+		Minute: 28
+		Second: 13
+		Millisecond: 536
 	}
 	Creator: "Blockbench 5.0.7"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -49,7 +49,7 @@ FBXHeaderExtension:  {
 	}
 }
 FileId: "iVFoobar"
-CreationTime: "2026-03-16 16:19:12:665"
+CreationTime: "2026-03-18 19:28:13:536"
 Creator: "Made with Blockbench"
 GlobalSettings:  {
 	Version: 1000
@@ -78,7 +78,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2038697746 {
+	Document: 1228696194 {
 		Scene: "Scene"
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
@@ -98,7 +98,7 @@ References:
 
 Definitions:  {
 	Version: 100
-	Count: 27
+	Count: 54
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -194,7 +194,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Material" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxSurfaceLambert" {
 			Properties70:  {
 				P: "ShadingModel", "KString", "", "", "Lambert"
@@ -218,7 +218,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Texture" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxFileTexture" {
 			Properties70:  {
 				P: "TextureTypeUse", "enum", "", "",0
@@ -241,7 +241,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Video" {
-		Count: 3
+		Count: 12
 		PropertyTemplate: "FbxVideo" {
 			Properties70:  {
 				P: "ImageSequence", "bool", "", "",0
@@ -268,21 +268,21 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Model: 71377332, "Model::pickaxe", "Null" {
+	Model: 75746154, "Model::pickaxe", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",87.5,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,90,0
 			P: "RotationOrder", "enum", "", "",0
 		}
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 70274744, "Model::body", "Mesh" {
+	Model: 76536042, "Model::body", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -297,9 +297,9 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 74963465, "Geometry::body", "Mesh" {
+	Geometry: 76677335, "Geometry::body", "Mesh" {
 		Vertices: *48 {
-			a: 5.88341346153846,88.75,5.937500000000001,5.88341346153846,88.75,-4.6875,5,0,4.375000000000001,5,0,-3.125,-5.88341346153846,88.75,5.937500000000001,-5.88341346153846,88.75,-4.6875,-5,0,4.375000000000001,-5,0,-3.125,4.843749999999998,63.74999999999999,-2.968749999999999,4.843749999999998,63.74999999999999,3.90625,-4.843749999999998,63.74999999999999,3.90625,-4.843749999999998,63.74999999999999,-2.968749999999999,4.78515625,68.70098039215685,4.589843750000001,5.468750000000001,68.70098039215685,-3.75,-5.468750000000001,68.70098039215685,-3.75,-5.468750000000001,68.70098039215685,5.000000000000001
+			a: 5.8834375,88.75,5.9375,5.8834375,88.75,-4.6875,5,0,4.375,5,0,-3.125,-5.8834375,88.75,5.9375,-5.8834375,88.75,-4.6875,-5,0,4.375,-5,0,-3.125,4.84375,63.74999999999999,-2.96875,4.84375,63.74999999999999,3.90625,-4.84375,63.74999999999999,3.90625,-4.84375,63.74999999999999,-2.96875,4.7851875,68.701,4.589875,5.46875,68.701,-3.75,-5.46875,68.701,-3.75,-5.46875,68.701,5
 		}
 		PolygonVertexIndex: *56 {
 			a: 8,13,12,-10,10,15,14,-12,0,1,5,-5,3,2,6,-8,9,12,15,-11,11,14,13,-9,3,8,9,-3,2,9,10,-7,6,10,11,-8,7,11,8,-4,0,12,13,-2,1,13,14,-6,5,14,15,-5,4,15,12,-1
@@ -311,7 +311,7 @@ Objects:  {
 			MappingInformationType: "ByPolygon"
 			ReferenceInformationType: "Direct"
 			Normals: *42 {
-				a: 0.9903629733796813,-0.11221153272274906,0.08117729289997395,-0.9921260166631694,-0.12524363081639073,0,0,1,0,0,-1,0,0.039595548302524916,-0.13620770607285707,0.9898887075631242,0,-0.1558684074307208,-0.9877778290511541,0.9999969963610915,0.0024509730302968167,0,0,0.00735274241341283,0.9999729682241425,-0.9999969963610915,0.0024509730302968175,0,0,0.002450973030296806,-0.9999969963610914,0.9948632027098315,-0.05997858789010274,0.08154616415654362,0,-0.04670935328299048,-0.9989085224963719,-0.9997861860897247,-0.02067805852013425,0,0.03992600882976285,-0.04584812588847038,0.9981502207440726
+				a: 0.9903632751449728,-0.11221175608565394,0.08117330250948428,-0.9921260782962984,-0.1252431425843639,0,0,1,0,0,-1,0,0.03959238342073338,-0.1362136073860149,0.989888022120661,0,-0.15586780512968945,-0.9877779240922795,0.9999969963610915,0.0024509730302967954,0,0,0.007352742413412809,0.9999729682241425,-0.9999969963610915,0.002450973030296795,0,0,0.002450973030296795,-0.9999969963610914,0.9948635715323155,-0.05997791272265608,0.08154216101746829,0,-0.04670939886488777,-0.9989085203649435,-0.9997861608888061,-0.02067927695114854,0,0.03992285010682397,-0.045848193952830726,0.9981503439615756
 			}
 		}
 		LayerElementUV: 0 {
@@ -320,7 +320,7 @@ Objects:  {
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
 			UV: *112 {
-				a: 0.125,0.7535211267605635,0.125,0.7776857221761945,0,0.7776857221761945,0,0.7535211267605635,0.25,0.7535211267605635,0.25,0.7776857221761945,0.125,0.7776857221761945,0.125,0.7535211267605635,0.625,0.625,0.625,0.75,0.5,0.75,0.5,0.625,0.625,0.5,0.625,0.625,0.5,0.625,0.5,0.5,0.375,0.7535211267605635,0.375,0.7776857221761945,0.25,0.7776857221761945,0.25,0.7535211267605635,0.5,0.7535211267605635,0.5,0.7776857221761945,0.375,0.7776857221761945,0.375,0.7535211267605635,0.125,0.125,0.125,0.7535211267605635,0,0.7535211267605635,0,0.125,0.375,0.125,0.375,0.7535211267605635,0.25,0.7535211267605635,0.25,0.125,0.25,0.125,0.25,0.7535211267605635,0.125,0.7535211267605635,0.125,0.125,0.5,0.125,0.5,0.7535211267605635,0.375,0.7535211267605635,0.375,0.125,0,1,0,0.7776857221761945,0.125,0.7776857221761945,0.125,1,0.375,1,0.375,0.7776857221761945,0.5,0.7776857221761945,0.5,1,0.125,1,0.125,0.7776857221761945,0.25,0.7776857221761945,0.25,1,0.25,1,0.25,0.7776857221761945,0.375,0.7776857221761945,0.375,1
+				a: 0.125,0.75352125,0.125,0.7776856249999999,0,0.7776856249999999,0,0.75352125,0.25,0.75352125,0.25,0.7776856249999999,0.125,0.7776856249999999,0.125,0.75352125,0.625,0.625,0.625,0.75,0.5,0.75,0.5,0.625,0.625,0.5,0.625,0.625,0.5,0.625,0.5,0.5,0.375,0.75352125,0.375,0.7776856249999999,0.25,0.7776856249999999,0.25,0.75352125,0.5,0.75352125,0.5,0.7776856249999999,0.375,0.7776856249999999,0.375,0.75352125,0.125,0.125,0.125,0.75352125,0,0.75352125,0,0.125,0.375,0.125,0.375,0.75352125,0.25,0.75352125,0.25,0.125,0.25,0.125,0.25,0.75352125,0.125,0.75352125,0.125,0.125,0.5,0.125,0.5,0.75352125,0.375,0.75352125,0.375,0.125,0,1,0,0.7776856249999999,0.125,0.7776856249999999,0.125,1,0.375,1,0.375,0.7776856249999999,0.5,0.7776856249999999,0.5,1,0.125,1,0.125,0.7776856249999999,0.25,0.7776856249999999,0.25,1,0.25,1,0.25,0.7776856249999999,0.375,0.7776856249999999,0.375,1
 			}
 		}
 		LayerElementMaterial: 0 {
@@ -348,7 +348,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79005419, "Model::centre", "Mesh" {
+	Model: 79960950, "Model::centre", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -363,7 +363,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 78438083, "Geometry::centre", "Mesh" {
+	Geometry: 77099899, "Geometry::centre", "Mesh" {
 		Vertices: *24 {
 			a: 7.5,83.125,9.375,7.5,83.125,-5.625,7.5,70.625,9.375,7.5,70.625,-5.625,-7.5,83.125,9.375,-7.5,83.125,-5.625,-7.5,70.625,9.375,-7.5,70.625,-5.625
 		}
@@ -414,7 +414,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71486169, "Model::segment3", "Mesh" {
+	Model: 70127918, "Model::segment3", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -429,7 +429,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 77532393, "Geometry::segment3", "Mesh" {
+	Geometry: 76184470, "Geometry::segment3", "Mesh" {
 		Vertices: *24 {
 			a: -1.5625,7.5,3.75,-1.5625,7.5,-3.75,-1.5625,2.5,3.75,-1.5625,2.5,-3.75,-12.812499999999998,7.5,3.75,-12.812499999999998,7.5,-3.75,-12.812499999999998,2.5,3.75,-12.812499999999998,2.5,-3.75
 		}
@@ -480,7 +480,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 77450746, "Model::segment4", "Mesh" {
+	Model: 79136140, "Model::segment4", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -495,7 +495,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 78868920, "Geometry::segment4", "Mesh" {
+	Geometry: 71030548, "Geometry::segment4", "Mesh" {
 		Vertices: *24 {
 			a: -8.75,-5,2.5,-8.75,-5,-2.5,-8.75,-8.125,2.5,-8.75,-8.125,-2.5,-13.75,-5,2.5,-13.75,-5,-2.5,-13.75,-8.125,2.5,-13.75,-8.125,-2.5
 		}
@@ -546,7 +546,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75543024, "Model::segment2", "Mesh" {
+	Model: 74256839, "Model::segment2", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -561,7 +561,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 73631371, "Geometry::segment2", "Mesh" {
+	Geometry: 78370350, "Geometry::segment2", "Mesh" {
 		Vertices: *24 {
 			a: 11.875,3.75,5.625,11.875,3.75,-5.625,11.875,-3.75,5.625,11.875,-3.75,-5.625,-7.5,3.75,5.625,-7.5,3.75,-5.625,-7.5,-3.75,5.625,-7.5,-3.75,-5.625
 		}
@@ -612,7 +612,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 72027710, "Model::segment5", "Mesh" {
+	Model: 76508885, "Model::segment5", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -627,7 +627,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 75732001, "Geometry::segment5", "Mesh" {
+	Geometry: 74254128, "Geometry::segment5", "Mesh" {
 		Vertices: *24 {
 			a: 8.75,-5,2.5,8.75,-5,-2.5,8.75,-8.125,2.5,8.75,-8.125,-2.5,13.75,-5,2.5,13.75,-5,-2.5,13.75,-8.125,2.5,13.75,-8.125,-2.5
 		}
@@ -678,7 +678,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71240665, "Model::segment4_1", "Mesh" {
+	Model: 79317760, "Model::segment4_1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -693,7 +693,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 71606200, "Geometry::segment4_1", "Mesh" {
+	Geometry: 75379545, "Geometry::segment4_1", "Mesh" {
 		Vertices: *24 {
 			a: 1.5625,7.5,3.75,1.5625,7.5,-3.75,1.5625,2.5,3.75,1.5625,2.5,-3.75,12.812499999999998,7.5,3.75,12.812499999999998,7.5,-3.75,12.812499999999998,2.5,3.75,12.812499999999998,2.5,-3.75
 		}
@@ -744,7 +744,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75574119, "Model::segment3_1", "Mesh" {
+	Model: 75397241, "Model::segment3_1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -759,7 +759,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72718097, "Geometry::segment3_1", "Mesh" {
+	Geometry: 73945966, "Geometry::segment3_1", "Mesh" {
 		Vertices: *24 {
 			a: -11.875,3.75,5.625,-11.875,3.75,-5.625,-11.875,-3.75,5.625,-11.875,-3.75,-5.625,7.5,3.75,5.625,7.5,3.75,-5.625,7.5,-3.75,5.625,7.5,-3.75,-5.625
 		}
@@ -810,7 +810,7 @@ Objects:  {
 			}
 		}
 	}
-	Material: 77127387, "Material::pickaxe.png", "" {
+	Material: 71322503, "Material::tree_1.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -821,28 +821,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79180448, "Texture::pickaxe.png", "" {
+	Texture: 74057180, "Texture::tree_1.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
-		TextureName: "Texture::pickaxe.png"
-		Media: "Video::pickaxe.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
-		RelativeFilename: "pickaxe.png"
+		TextureName: "Texture::tree_1.png"
+		Media: "Video::tree_1.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
+		RelativeFilename: "tree_1.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 79288678, "Video::pickaxe.png", "Clip" {
+	Video: 77941899, "Video::tree_1.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\pickaxe.png"
-		RelativeFilename: "pickaxe.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\tree_1.png"
+		RelativeFilename: "tree_1.png"
 	}
-	Material: 78314008, "Material::shovel.png", "" {
+	Material: 71893451, "Material::tree_2.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -853,28 +853,156 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 78750843, "Texture::shovel.png", "" {
+	Texture: 71492032, "Texture::tree_2.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::tree_2.png"
+		Media: "Video::tree_2.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		RelativeFilename: "tree_2.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 74530068, "Video::tree_2.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\tree_2.png"
+		RelativeFilename: "tree_2.png"
+	}
+	Material: 76839355, "Material::sugar-cane.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 71814270, "Texture::sugar-cane.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::sugar-cane.png"
+		Media: "Video::sugar-cane.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		RelativeFilename: "sugar-cane.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 73846305, "Video::sugar-cane.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\sugar-cane.png"
+		RelativeFilename: "sugar-cane.png"
+	}
+	Material: 74411325, "Material::stone.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 74447144, "Texture::stone.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::stone.png"
+		Media: "Video::stone.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		RelativeFilename: "stone.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 70983857, "Video::stone.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\stone.png"
+		RelativeFilename: "stone.png"
+	}
+	Material: 72464969, "Material::grass.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 79734258, "Texture::grass.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::grass.png"
+		Media: "Video::grass.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		RelativeFilename: "grass.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 79854344, "Video::grass.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\grass.png"
+		RelativeFilename: "grass.png"
+	}
+	Material: 71019844, "Material::shovel.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 72244712, "Texture::shovel.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::shovel.png"
 		Media: "Video::shovel.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		RelativeFilename: "shovel.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 78667944, "Video::shovel.png", "Clip" {
+	Video: 75167088, "Video::shovel.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\shovel.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\shovel.png"
 		RelativeFilename: "shovel.png"
 	}
-	Material: 73561029, "Material::axe.png", "" {
+	Material: 76462211, "Material::pickaxe.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -885,26 +1013,186 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 78957552, "Texture::axe.png", "" {
+	Texture: 70832915, "Texture::pickaxe.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::pickaxe.png"
+		Media: "Video::pickaxe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		RelativeFilename: "pickaxe.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 75731982, "Video::pickaxe.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\pickaxe.png"
+		RelativeFilename: "pickaxe.png"
+	}
+	Material: 79985419, "Material::scythe.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 74479158, "Texture::scythe.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::scythe.png"
+		Media: "Video::scythe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		RelativeFilename: "scythe.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 77230347, "Video::scythe.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\scythe.png"
+		RelativeFilename: "scythe.png"
+	}
+	Material: 74404443, "Material::axe.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 79314352, "Texture::axe.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::axe.png"
 		Media: "Video::axe.png"
-		FileName: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		RelativeFilename: "axe.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 70400251, "Video::axe.png", "Clip" {
+	Video: 79843017, "Video::axe.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Project\Blockbench\Test\SurvivalIsland\pickaxe\axe.png"
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\axe.png"
 		RelativeFilename: "axe.png"
+	}
+	Material: 76218540, "Material::sand.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 73772373, "Texture::sand.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::sand.png"
+		Media: "Video::sand.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		RelativeFilename: "sand.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 71958295, "Video::sand.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\sand.png"
+		RelativeFilename: "sand.png"
+	}
+	Material: 77086641, "Material::seamless _sand.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 72438368, "Texture::seamless _sand.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::seamless _sand.png"
+		Media: "Video::seamless _sand.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		RelativeFilename: "seamless _sand.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 72120778, "Video::seamless _sand.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\seamless _sand.png"
+		RelativeFilename: "seamless _sand.png"
+	}
+	Material: 77672129, "Material::seamless_grass.png", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
+			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Texture: 72925120, "Texture::seamless_grass.png", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::seamless_grass.png"
+		Media: "Video::seamless_grass.png"
+		FileName: "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		RelativeFilename: "seamless_grass.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Video: 78017414, "Video::seamless_grass.png", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		}
+		UseMipMap: 0
+		Filename: "C:\Project\Blockbench\SurvivalIsland\texture\seamless_grass.png"
+		RelativeFilename: "seamless_grass.png"
 	}
 }
 
@@ -914,97 +1202,151 @@ Objects:  {
 Connections:  {
 
 	;Model::pickaxe, Model::RootNode
-	C: "OO",71377332,0
+	C: "OO",75746154,0
 
 	;Model::body, Model::pickaxe
-	C: "OO",70274744,71377332
+	C: "OO",76536042,75746154
 
 	;Geometry::body, Model::body
-	C: "OO",74963465,70274744
+	C: "OO",76677335,76536042
 
 	;Material::pickaxe.png, Model::body
-	C: "OO",77127387,70274744
+	C: "OO",76462211,76536042
 
 	;Model::centre, Model::pickaxe
-	C: "OO",79005419,71377332
+	C: "OO",79960950,75746154
 
 	;Geometry::centre, Model::centre
-	C: "OO",78438083,79005419
+	C: "OO",77099899,79960950
 
 	;Material::pickaxe.png, Model::centre
-	C: "OO",77127387,79005419
+	C: "OO",76462211,79960950
 
 	;Model::segment3, Model::pickaxe
-	C: "OO",71486169,71377332
+	C: "OO",70127918,75746154
 
 	;Geometry::segment3, Model::segment3
-	C: "OO",77532393,71486169
+	C: "OO",76184470,70127918
 
 	;Material::pickaxe.png, Model::segment3
-	C: "OO",77127387,71486169
+	C: "OO",76462211,70127918
 
 	;Model::segment4, Model::pickaxe
-	C: "OO",77450746,71377332
+	C: "OO",79136140,75746154
 
 	;Geometry::segment4, Model::segment4
-	C: "OO",78868920,77450746
+	C: "OO",71030548,79136140
 
 	;Material::pickaxe.png, Model::segment4
-	C: "OO",77127387,77450746
+	C: "OO",76462211,79136140
 
 	;Model::segment2, Model::pickaxe
-	C: "OO",75543024,71377332
+	C: "OO",74256839,75746154
 
 	;Geometry::segment2, Model::segment2
-	C: "OO",73631371,75543024
+	C: "OO",78370350,74256839
 
 	;Material::pickaxe.png, Model::segment2
-	C: "OO",77127387,75543024
+	C: "OO",76462211,74256839
 
 	;Model::segment5, Model::pickaxe
-	C: "OO",72027710,71377332
+	C: "OO",76508885,75746154
 
 	;Geometry::segment5, Model::segment5
-	C: "OO",75732001,72027710
+	C: "OO",74254128,76508885
 
 	;Material::pickaxe.png, Model::segment5
-	C: "OO",77127387,72027710
+	C: "OO",76462211,76508885
 
 	;Model::segment4_1, Model::pickaxe
-	C: "OO",71240665,71377332
+	C: "OO",79317760,75746154
 
 	;Geometry::segment4_1, Model::segment4_1
-	C: "OO",71606200,71240665
+	C: "OO",75379545,79317760
 
 	;Material::pickaxe.png, Model::segment4_1
-	C: "OO",77127387,71240665
+	C: "OO",76462211,79317760
 
 	;Model::segment3_1, Model::pickaxe
-	C: "OO",75574119,71377332
+	C: "OO",75397241,75746154
 
 	;Geometry::segment3_1, Model::segment3_1
-	C: "OO",72718097,75574119
+	C: "OO",73945966,75397241
 
 	;Material::pickaxe.png, Model::segment3_1
-	C: "OO",77127387,75574119
+	C: "OO",76462211,75397241
 
-	;Texture::pickaxe.png, Material::pickaxe.png
-	C: "OP",79180448,77127387, "DiffuseColor"
+	;Texture::tree_1.png, Material::tree_1.png
+	C: "OP",74057180,71322503, "DiffuseColor"
 
-	;Video::pickaxe.png, Texture::pickaxe.png
-	C: "OO",79288678,79180448
+	;Video::tree_1.png, Texture::tree_1.png
+	C: "OO",77941899,74057180
+
+	;Texture::tree_2.png, Material::tree_2.png
+	C: "OP",71492032,71893451, "DiffuseColor"
+
+	;Video::tree_2.png, Texture::tree_2.png
+	C: "OO",74530068,71492032
+
+	;Texture::sugar-cane.png, Material::sugar-cane.png
+	C: "OP",71814270,76839355, "DiffuseColor"
+
+	;Video::sugar-cane.png, Texture::sugar-cane.png
+	C: "OO",73846305,71814270
+
+	;Texture::stone.png, Material::stone.png
+	C: "OP",74447144,74411325, "DiffuseColor"
+
+	;Video::stone.png, Texture::stone.png
+	C: "OO",70983857,74447144
+
+	;Texture::grass.png, Material::grass.png
+	C: "OP",79734258,72464969, "DiffuseColor"
+
+	;Video::grass.png, Texture::grass.png
+	C: "OO",79854344,79734258
 
 	;Texture::shovel.png, Material::shovel.png
-	C: "OP",78750843,78314008, "DiffuseColor"
+	C: "OP",72244712,71019844, "DiffuseColor"
 
 	;Video::shovel.png, Texture::shovel.png
-	C: "OO",78667944,78750843
+	C: "OO",75167088,72244712
+
+	;Texture::pickaxe.png, Material::pickaxe.png
+	C: "OP",70832915,76462211, "DiffuseColor"
+
+	;Video::pickaxe.png, Texture::pickaxe.png
+	C: "OO",75731982,70832915
+
+	;Texture::scythe.png, Material::scythe.png
+	C: "OP",74479158,79985419, "DiffuseColor"
+
+	;Video::scythe.png, Texture::scythe.png
+	C: "OO",77230347,74479158
 
 	;Texture::axe.png, Material::axe.png
-	C: "OP",78957552,73561029, "DiffuseColor"
+	C: "OP",79314352,74404443, "DiffuseColor"
 
 	;Video::axe.png, Texture::axe.png
-	C: "OO",70400251,78957552
+	C: "OO",79843017,79314352
+
+	;Texture::sand.png, Material::sand.png
+	C: "OP",73772373,76218540, "DiffuseColor"
+
+	;Video::sand.png, Texture::sand.png
+	C: "OO",71958295,73772373
+
+	;Texture::seamless _sand.png, Material::seamless _sand.png
+	C: "OP",72438368,77086641, "DiffuseColor"
+
+	;Video::seamless _sand.png, Texture::seamless _sand.png
+	C: "OO",72120778,72438368
+
+	;Texture::seamless_grass.png, Material::seamless_grass.png
+	C: "OP",72925120,77672129, "DiffuseColor"
+
+	;Video::seamless_grass.png, Texture::seamless_grass.png
+	C: "OO",78017414,72925120
 }
 
 ; Takes section

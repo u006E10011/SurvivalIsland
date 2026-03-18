@@ -3,12 +3,7 @@ guid: 5bfb95473a3a3f049b4dc542b5738680
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shovel.png
-    second: {fileID: 2100000, guid: 7f0f2ad4e5b4e094293d1fb61e452860, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

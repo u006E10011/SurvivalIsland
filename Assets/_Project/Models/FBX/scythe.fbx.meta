@@ -3,12 +3,7 @@ guid: 27e6d01881af3264f80c141e7248f9e1
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: scythe.png
-    second: {fileID: 2100000, guid: dc03b0d93b6e68349b25acb1fcdf8624, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
