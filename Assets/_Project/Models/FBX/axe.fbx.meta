@@ -3,7 +3,12 @@ guid: 915dd0c898d0bac42876f83a288be45a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: axe.png
+    second: {fileID: 2100000, guid: 86d1409307b19ed44b4f71b1c78dc463, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
