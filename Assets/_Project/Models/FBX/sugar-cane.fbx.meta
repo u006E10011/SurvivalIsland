@@ -3,7 +3,12 @@ guid: 8f90a6d475842fc40884bdd10975aeb9
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sugar-cane.png
+    second: {fileID: 2100000, guid: bad4ce3225affe14997b3b345ad5db9a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,12 @@ guid: b896f17ab0df2ad49b2f2ce448ad7d8a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pickaxe.png
+    second: {fileID: 2100000, guid: b1572ce460f3134499ee434baa0a8364, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
