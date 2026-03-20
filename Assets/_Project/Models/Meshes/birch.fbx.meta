@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89acc896064818c408dfe9aee6c9f8b1
+guid: 43f352f04840316478b4a69ef67aebd9
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: tree_2.png
+      name: birch.png
     second: {fileID: 2100000, guid: 139c8fa33dd70574caae70e88da6c092, type: 2}
   materials:
     materialImportMode: 2
