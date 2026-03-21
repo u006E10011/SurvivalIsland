@@ -17,3 +17,15 @@ MonoBehaviour:
   DurationAnimation: 0.3
   EaseGrowth: 11
   EaseDestruction: 27
+  HarvestDrop:
+    _serializedList:
+    - Key: 1
+      Value: 3
+    - Key: 2
+      Value: 5
+    - Key: 4
+      Value: 4
+    - Key: 8
+      Value: 13
+    - Key: 16
+      Value: 6

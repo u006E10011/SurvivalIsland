@@ -3,11 +3,10 @@
     [System.Flags]
     public enum HarvestableObjectType : byte
     {
-        Oak = 1 << 0,
-        Birch = 1 << 1,
-        Stone = 1 << 2,
-        Sand = 1 << 3,
-        grass = 1 << 4,
-        SugarCane = 1 << 5
+        Tree = 1 << 0,
+        Stone = 1 << 1,
+        Sand = 1 << 2,
+        grass = 1 << 3,
+        SugarCane = 1 << 4
     }
 }

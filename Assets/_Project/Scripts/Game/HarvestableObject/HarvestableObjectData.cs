@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using AYellowpaper.SerializedCollections;
+using DG.Tweening;
 using Gaskellgames;
 using UnityEngine;
 
@@ -15,5 +16,9 @@ namespace Ryadevn
         public float DurationAnimation = .25f;
         public Ease EaseGrowth = Ease.InBack;
         public Ease EaseDestruction = Ease.OutBack;
+
+        [Space(10)]
+        [SerializedDictionary("Type", "Amount")]
+        public AYellowpaper.SerializedCollections.SerializedDictionary<HarvestableObjectType, int> HarvestDrop = new();
     }
 }

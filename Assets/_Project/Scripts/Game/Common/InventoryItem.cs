@@ -17,7 +17,7 @@ namespace Ryadevn
 
         public void UpdateAmount(InventorySaveData data)
         {
-            _amount.text=data.Amount.ToString();
+            _amount.text = data.Amount.ToString();
         }
     }
 }

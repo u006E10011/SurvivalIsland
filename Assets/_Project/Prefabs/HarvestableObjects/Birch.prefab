@@ -2742,7 +2742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81eea82f981b7624a85e7237ab439ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObject
-  _type: 2
+  _type: 1
   _segments:
   - {fileID: 3376162716313330992}
   - {fileID: 4396319982337413632}

@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81eea82f981b7624a85e7237ab439ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObject
-  _type: 4
+  _type: 2
   _segments:
   - {fileID: 607732597356028893}
   - {fileID: 3908848718310613212}
