@@ -37,22 +37,16 @@ namespace Ryadevn
             if (hitCount == 0)
                 return;
 
-            var validColliders = _hitColliders
+            var harvestableObject = _hitColliders
                 .Take(hitCount)
                 .Where(x => x != null)
-                .OrderByDescending(x => Vector3.Distance(x.transform.position, hitInfo.point));
+                .Select(x => x.GetComponentInParent<HarvestableObject>())
+                .Where(x => x != null && x.Type.HasFlag(_toolBar.CurrentTool.TargetType))
+                .OrderByDescending(x => Vector3.Distance(x.transform.position, hitInfo.point))
+                .FirstOrDefault();
 
-            if (!validColliders.Any())
-                return;
-
-            var harvestableObject = validColliders.First()
-                .GetComponentInParent<HarvestableObject>();
-
-            if (harvestableObject != null)
-            {
-                harvestableObject.TakeDamage();
-                //_toolBar.CurrentTool.Attack();
-            }
+            harvestableObject?.TakeDamage();
+            _toolBar.CurrentTool.Attack();
         }
 
 #if UNITY_EDITOR

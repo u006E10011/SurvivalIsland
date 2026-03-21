@@ -12,6 +12,8 @@ namespace Ryadevn
         [SerializeField] private HarvestableObjectType _type;
         [SerializeField] private List<HarvestableObjectSegment> _segments = new();
 
+        public HarvestableObjectType Type => _type;
+
         private int _currentLevel = 0;
         private WaitForSeconds _growthTime;
         private WaitForSeconds _delayToGrowth;

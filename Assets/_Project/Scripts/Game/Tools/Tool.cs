@@ -5,12 +5,14 @@ namespace Ryadevn
 {
     public class Tool : MonoBehaviour
     {
-        [SerializeField] ToolsType _type;
+        [SerializeField] private ToolsType _type;
+        [SerializeField] private HarvestableObjectType _targetObject;
 
         [SerializeField, Space(10)] private AudioClip _clip;
         [SerializeField] private Animator _animator;
 
         public ToolsType Type => _type;
+        public HarvestableObjectType TargetType => _targetObject;
 
         private void OnValidate()
         {
