@@ -6,7 +6,7 @@ namespace Ryadevn
     public class ToolBarItem : MonoBehaviour
     {
         [SerializeField] private Image _icon;
-        [SerializeField] private Image _outline;
+        [SerializeField] private Outline _outline;
         [SerializeField] private Button _button;
 
         public void Init(ToolBarIData data, ToolBar toolBar)
@@ -17,7 +17,7 @@ namespace Ryadevn
 
         public void Outline(bool isSelect)
         {
-            _outline.gameObject.SetActive(isSelect);    
+            _outline.enabled = isSelect;
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Ryadevn
                 .Take(hitCount)
                 .Where(x => x != null)
                 .Select(x => x.GetComponentInParent<HarvestableObject>())
-                .Where(x => x != null && x.Type.HasFlag(_toolBar.CurrentTool.TargetType))
+                .Where(x => x != null && (x.Type & _toolBar.CurrentTool.TargetType) == x.Type)
                 .OrderByDescending(x => Vector3.Distance(x.transform.position, hitInfo.point))
                 .FirstOrDefault();
 

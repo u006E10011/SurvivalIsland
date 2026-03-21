@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using UnityEngine;
 
-namespace Assets._Project.Scripts.Game.Common
+namespace Ryadevn
 {
-    internal class Inventory
+    public class Inventory : MonoBehaviour
     {
+        [SerializeField] private Transform _container;
     }
 }
