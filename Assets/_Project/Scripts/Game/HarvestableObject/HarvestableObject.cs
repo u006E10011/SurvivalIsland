@@ -6,6 +6,7 @@ using Gaskellgames;
 
 namespace Ryadevn
 {
+    [SelectionBase]
     public class HarvestableObject : MonoBehaviour
     {
         [SerializeField] private HarvestableObjectType _type;

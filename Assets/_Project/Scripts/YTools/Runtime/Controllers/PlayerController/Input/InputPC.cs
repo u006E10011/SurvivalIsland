@@ -10,8 +10,6 @@ namespace YTools
         {
             _data = data;
             CursorController.IsVisible(YToolsDataProvider.Data.VisibleCursor);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.lockState = CursorLockMode.None;
         }
 
 

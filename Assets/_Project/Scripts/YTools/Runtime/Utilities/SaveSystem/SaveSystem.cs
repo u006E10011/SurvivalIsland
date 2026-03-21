@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.IO;
+﻿using System.IO;
+using UnityEngine;
 
 namespace YTools
 {
@@ -11,7 +11,7 @@ namespace YTools
             //#if !UNITY_EDITOR && !UNITY_WEBGL
             //Path.Combine(Application.persistentDataPath, "save.json");
             Path.Combine(Application.dataPath, "/Assets/Project/Saves/save.json");
-//#endif
+            //#endif
         }
 
         private static SaveData _data;
@@ -31,7 +31,8 @@ namespace YTools
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize()
         {
-            Load();
+            if (Resources.Load<YToolsData>("YTools/" + nameof(YToolsData)).SaveSystem)
+                Load();
         }
 
         public static void Save()

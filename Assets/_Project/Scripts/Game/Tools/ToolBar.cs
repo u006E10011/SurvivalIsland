@@ -12,6 +12,8 @@ namespace Ryadevn
         [SerializeField] private HorizontalLayoutGroup _container;
         [SerializeField] private List<ToolBarIData> _tools = new();
 
+        public Tool CurrentTool { get; private set; }
+
         private void Awake()
         {
             Init();
@@ -33,6 +35,9 @@ namespace Ryadevn
                 var isSelected = x.Tool == tool;
                 x.Tool.gameObject.SetActive(isSelected);
                 x.Item.Outline(isSelected);
+
+                if(isSelected)
+                    CurrentTool = tool;
             });
 
             AudioController.Get().Play(_selectSound);

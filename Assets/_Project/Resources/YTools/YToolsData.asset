@@ -15,4 +15,5 @@ MonoBehaviour:
   TargetFrame: 60
   DebugType: 16
   VisibleCursor: 0
+  SaveSystem: 0
   SavePath: 0

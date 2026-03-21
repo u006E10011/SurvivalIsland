@@ -17,12 +17,7 @@ namespace Ryadevn
             _animator ??= GetComponent<Animator>();
         }
 
-        public void Update()
-        {
-            Attack();
-        }
-
-        private void Attack()
+        public void Attack()
         {
             if (Input.GetMouseButtonDown(0))
             {

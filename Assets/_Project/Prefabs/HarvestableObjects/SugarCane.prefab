@@ -130,7 +130,7 @@ PrefabInstance:
       addedObject: {fileID: 6214565548206071267}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1487300576293942361}
+      addedObject: {fileID: 8762117999854795489}
   m_SourcePrefab: {fileID: 100100000, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
 --- !u!4 &1236710501688295271 stripped
 Transform:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268bc91ffca063e478dbfbb4a154a9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObjectSegment
---- !u!65 &1487300576293942361
+--- !u!65 &8762117999854795489
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,8 +173,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07890961, y: 0.3188107, z: 0.077504136}
-  m_Center: {x: 0, y: 0.15360475, z: 0.0071377866}
+  m_Size: {x: 0.08799267, y: 0.3141728, z: 0.09587723}
+  m_Center: {x: 0.004025936, y: 0.15552154, z: 0.0074332654}
 --- !u!1001 &2936099219631335948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ PrefabInstance:
       addedObject: {fileID: 1438178290065342732}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3032318039029001221}
+      addedObject: {fileID: 3588856141884107347}
   m_SourcePrefab: {fileID: 100100000, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
 --- !u!1 &2629670618825512797 stripped
 GameObject:
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268bc91ffca063e478dbfbb4a154a9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObjectSegment
---- !u!65 &3032318039029001221
+--- !u!65 &3588856141884107347
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,8 +290,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07890961, y: 0.3188107, z: 0.077504136}
-  m_Center: {x: 0, y: 0.15360475, z: 0.0071377866}
+  m_Size: {x: 0.08799267, y: 0.3141728, z: 0.09587723}
+  m_Center: {x: 0.004025936, y: 0.15552154, z: 0.0074332654}
 --- !u!4 &3401809615507164647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
@@ -371,7 +371,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6845822285351042458}
+      addedObject: {fileID: 3316415547052645300}
   m_SourcePrefab: {fileID: 100100000, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
 --- !u!4 &4946651800440160367 stripped
 Transform:
@@ -383,7 +383,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
   m_PrefabInstance: {fileID: 4840438209432594308}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &6845822285351042458
+--- !u!65 &3316415547052645300
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,8 +402,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07890961, y: 0.3188107, z: 0.077504136}
-  m_Center: {x: 0, y: 0.15360475, z: 0.0071377866}
+  m_Size: {x: 0.08799267, y: 0.3141728, z: 0.09587723}
+  m_Center: {x: 0.004025936, y: 0.15552154, z: 0.0074332654}
 --- !u!1001 &7482243820280922990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ PrefabInstance:
       addedObject: {fileID: 6127605301570729161}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3854753267394951596}
+      addedObject: {fileID: 5588544969488440040}
   m_SourcePrefab: {fileID: 100100000, guid: 8f90a6d475842fc40884bdd10975aeb9, type: 3}
 --- !u!4 &6943702222665000069 stripped
 Transform:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268bc91ffca063e478dbfbb4a154a9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObjectSegment
---- !u!65 &3854753267394951596
+--- !u!65 &5588544969488440040
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,5 +524,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07890961, y: 0.3188107, z: 0.077504136}
-  m_Center: {x: 0, y: 0.15360475, z: 0.0071377866}
+  m_Size: {x: 0.08799267, y: 0.3141728, z: 0.09587723}
+  m_Center: {x: 0.004025936, y: 0.15552154, z: 0.0074332654}

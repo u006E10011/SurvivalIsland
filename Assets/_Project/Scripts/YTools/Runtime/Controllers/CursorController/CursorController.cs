@@ -10,7 +10,7 @@ namespace YTools
         {
             if (PlatformController.Instance.Type == PlatformType.Mobile)
             {
-                Cursor.lockState = CursorLockMode.None;
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
             else

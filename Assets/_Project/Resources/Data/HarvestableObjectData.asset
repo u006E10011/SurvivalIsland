@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObjectData
   GrowthTime: 3
   DelayToGrowth: 5
-  DurationAnimation: 0.5
-  EaseGrowth: 12
+  DurationAnimation: 0.3
+  EaseGrowth: 11
   EaseDestruction: 27
