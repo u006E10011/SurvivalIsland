@@ -7,27 +7,22 @@
         false,
         false
     ],
-    "idSave": 18,
-    "InventorySaveData": [
-        {
-            "Amount": 27,
-            "Type": 1
-        },
-        {
-            "Amount": 10,
-            "Type": 2
-        },
-        {
-            "Amount": 12,
-            "Type": 4
-        },
-        {
-            "Amount": 18,
-            "Type": 16
-        },
-        {
-            "Amount": 13,
-            "Type": 8
-        }
-    ]
+    "idSave": 10,
+    "InventorySaveData": {
+        "HarvestableResources": [
+            {
+                "_amount": 18,
+                "ResourceType": 1
+            },
+            {
+                "_amount": 18,
+                "ResourceType": 16
+            },
+            {
+                "_amount": 13,
+                "ResourceType": 8
+            }
+        ],
+        "CraftedResources": []
+    }
 }

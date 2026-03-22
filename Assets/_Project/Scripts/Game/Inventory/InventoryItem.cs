@@ -9,13 +9,13 @@ namespace Ryadevn
         [SerializeField] private Image _icon;
         [SerializeField] private TMP_Text _amount;
 
-        public void Init(InventorySaveData data)
+        public void Init(InventorySaveDataBase data)
         {
-            _icon.sprite = InventoryIconProvider.Get(data.Type);
+            _icon.sprite = InventoryIconProvider.Get(data);
             _amount.text = data.Amount.ToString();
         }
 
-        public void UpdateAmount(InventorySaveData data)
+        public void UpdateAmount(InventorySaveDataBase data)
         {
             _amount.text = data.Amount.ToString();
         }

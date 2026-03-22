@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
@@ -6,13 +7,13 @@ namespace Ryadevn
 {
     public class Inventory : MonoBehaviour
     {
-        public static System.Action<HarvestableObjectType, int> OnAdd;
-        public static System.Action<HarvestableObjectType, int> OnRemove;
+        public static Action<InventorySaveDataBase> OnAdd;
+        public static Action<InventorySaveDataBase> OnRemove;
 
         [SerializeField] private InventoryItem _item;
         [SerializeField] private Transform _container;
 
-        private readonly Dictionary<HarvestableObjectType, InventoryItem> _items = new();
+        private readonly Dictionary<(Type enumType, int value), InventoryItem> _items = new();
 
         private void Awake()
         {
@@ -33,63 +34,77 @@ namespace Ryadevn
 
         private void Init()
         {
-            foreach (var data in YG2.saves.InventorySaveData)
-                CreateItem(data);
-        }
-
-        private void Add(HarvestableObjectType type, int amount)
-        {
-            var index = YG2.saves.InventorySaveData.FindIndex(x => x.Type == type);
-
-            if (index == -1)
-            {
-                YG2.saves.InventorySaveData.Add(new(type, amount));
-                UpdateInventory(YG2.saves.InventorySaveData[^1]);
-            }
-            else
-            {
-                YG2.saves.InventorySaveData[index].Amount += amount;
-                UpdateInventory(YG2.saves.InventorySaveData[index]);
-            }
-
-            YG2.SaveProgress();
-        }
-
-        private void Remove(HarvestableObjectType type, int amount)
-        {
-            var index = YG2.saves.InventorySaveData.FindIndex(x => x.Type == type);
-
-            if (index == -1)
-                return;
-
-            YG2.saves.InventorySaveData[index].Amount -= amount;
-            YG2.SaveProgress();
-            UpdateInventory(YG2.saves.InventorySaveData[index]);
-        }
-
-        private void UpdateInventory(InventorySaveData data)
-        {
-            if (_items.TryGetValue(data.Type, out InventoryItem item))
+            foreach (var data in YG2.saves.InventorySaveData.GetAllItems())
             {
                 if (data.Amount > 0)
-                    item.UpdateAmount(data);
+                    CreateItem(data);
+            }
+        }
+
+        private void Add(InventorySaveDataBase data)
+        {
+            YG2.saves.InventorySaveData.AddResource(data);
+            YG2.SaveProgress();
+            UpdateInventory(data);
+        }
+
+        private void Remove(InventorySaveDataBase data)
+        {
+            YG2.saves.InventorySaveData.RemoveResource(data);
+            YG2.SaveProgress();
+            UpdateInventory(data);
+        }
+
+        private void UpdateInventory(InventorySaveDataBase data)
+        {
+            var key = (data.Type.GetType(), Convert.ToInt32(data.Type));
+
+            if (_items.TryGetValue(key, out InventoryItem item))
+            {
+                var actualData = FindActualData(data);
+
+                if (actualData == null || actualData.Amount <= 0)
+                {
+                    Destroy(item.gameObject);
+                    _items.Remove(key);
+                }
                 else
-                    Destroy(_items[data.Type].gameObject);
+                    item.UpdateAmount(actualData);
 
                 return;
             }
 
-            if (data.Amount <= 0)
-                return;
+            var newData = FindActualData(data);
 
-            CreateItem(data);
+            if (newData != null && newData.Amount > 0)
+                CreateItem(newData);
         }
 
-        private void CreateItem(InventorySaveData data)
+        private InventorySaveDataBase FindActualData(InventorySaveDataBase data)
+        {
+            var allItems = YG2.saves.InventorySaveData.GetAllItems();
+            return allItems.Find(x => x.IsSameResource(data));
+        }
+
+        private void CreateItem(InventorySaveDataBase data)
         {
             var newItem = Instantiate(_item, _container);
             newItem.Init(data);
-            _items.Add(data.Type, newItem);
+            var key = (data.Type.GetType(), Convert.ToInt32(data.Type));
+            _items.Add(key, newItem);
+        }
+
+        public int GetResourceAmount<T>(T type) where T : Enum
+        {
+            var allItems = YG2.saves.InventorySaveData.GetAllItems();
+            var resource = allItems.Find(x => x.Type.GetType() == typeof(T) &&
+                                             Convert.ToInt32(x.Type) == Convert.ToInt32(type));
+            return resource?.Amount ?? 0;
+        }
+
+        public bool HasResource<T>(T type, int amount) where T : Enum
+        {
+            return GetResourceAmount(type) >= amount;
         }
     }
 }

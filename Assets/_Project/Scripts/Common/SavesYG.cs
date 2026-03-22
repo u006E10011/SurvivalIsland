@@ -5,6 +5,6 @@ namespace YG
 {
     public partial class SavesYG
     {
-        public List<InventorySaveData> InventorySaveData = new();
+        public InventorySaveContainer InventorySaveData = new();
     }
 }

@@ -14,9 +14,9 @@ namespace Ryadevn
                 .Select(x => TextureToSprite(x)) .ToList();
         }
 
-        public static Sprite Get(HarvestableObjectType type)
+        public static Sprite Get(InventorySaveDataBase data)
         {
-            return _icons.Find(x => x.name.Equals(type.ToString().ToLower()));
+            return _icons.Find(x => x.name.Equals(data.Type.ToString().ToLower()));
         }
 
         private static Sprite TextureToSprite(Texture2D texture)

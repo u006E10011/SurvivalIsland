@@ -43,7 +43,7 @@ namespace Ryadevn
             _growth = StartCoroutine(Regeniration());
 
             AudioController.Get().Play(_type.ToString());
-            Inventory.OnAdd?.Invoke(_type, _data.HarvestDrop[_type]);
+            Inventory.OnAdd?.Invoke(new HarvestableSaveData(_type, _data.HarvestDrop[_type]));
         }
 
         private IEnumerator Regeniration()
