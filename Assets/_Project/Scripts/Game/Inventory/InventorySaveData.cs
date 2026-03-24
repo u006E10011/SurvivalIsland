@@ -33,7 +33,6 @@ namespace Ryadevn
 
         public override int GetHashCode()
         {
-            // Комбинируем хэш-код типа и значения
             return HashCode.Combine(Type.GetType(), Convert.ToInt32(Type));
         }
 

@@ -6,5 +6,6 @@ namespace YG
     public partial class SavesYG
     {
         public InventorySaveContainer InventorySaveData = new();
+        public List<EquipmentTask> EquipmentTask = new();
     }
 }

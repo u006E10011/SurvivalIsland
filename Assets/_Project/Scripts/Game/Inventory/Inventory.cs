@@ -94,7 +94,7 @@ namespace Ryadevn
             _items.Add(key, newItem);
         }
 
-        public int GetResourceAmount<T>(T type) where T : Enum
+        public static int GetResourceAmount<T>(T type) where T : Enum
         {
             var allItems = YG2.saves.InventorySaveData.GetAllItems();
             var resource = allItems.Find(x => x.Type.GetType() == typeof(T) &&
@@ -102,7 +102,7 @@ namespace Ryadevn
             return resource?.Amount ?? 0;
         }
 
-        public bool HasResource<T>(T type, int amount) where T : Enum
+        public static bool HasResource<T>(T type, int amount) where T : Enum
         {
             return GetResourceAmount(type) >= amount;
         }
