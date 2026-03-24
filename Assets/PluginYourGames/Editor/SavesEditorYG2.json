@@ -7,24 +7,19 @@
         false,
         false
     ],
-    "idSave": 24,
+    "idSave": 56,
     "InventorySaveData": {
-        "HarvestableResources": [
-            {
-                "_amount": 10,
-                "ResourceType": 1
-            }
-        ],
+        "HarvestableResources": [],
         "CraftedResources": [
             {
-                "_amount": 8,
+                "_amount": 68,
                 "ResourceType": 0
             }
         ]
     },
-    "CraftInfoData": [
+    "EquipmentTask": [
         {
-            "CraftingCount": 10,
+            "Count": 23,
             "CraftedResource": {
                 "_amount": 0,
                 "ResourceType": 0

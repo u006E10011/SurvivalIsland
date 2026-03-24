@@ -6,7 +6,7 @@ using YTools;
 
 namespace Ryadevn
 {
-    public class Equipment : MonoBehaviour
+    public class Equipment : MonoBehaviour, IInteractable
     {
         [SerializeField] private CraftedResourceType _resourceType;
         [SerializeField] private DisplayEquipment _display;
@@ -41,7 +41,7 @@ namespace Ryadevn
         }
 
         [Button]
-        public void DoWork()
+        public void Interact()
         {
             var currentHarvestableAmount = new HarvestableSaveData(_recipe.HarvestableType, Inventory.GetResourceAmount(_recipe.HarvestableType));
             var craftedCount = 0;
@@ -108,10 +108,7 @@ namespace Ryadevn
             var saveData = YG2.saves.EquipmentTask.Find(x => x.CraftedResource.ResourceType == _resourceType);
 
             if (saveData != null)
-            {
-                saveData.CraftedResource = _task.CraftedResource;
-                saveData.HarvestableResource = _task.HarvestableResource;
-            }
+                saveData.Count = _task.Count;
             else
                 YG2.saves.EquipmentTask.Add(_task);
 
