@@ -1,0 +1,29 @@
+{
+    "Data": [
+        {
+            "Key": "tree",
+            "EN": "Tree",
+            "RU": "Дерево"
+        },
+        {
+            "Key": "cane",
+            "EN": "Cane",
+            "RU": "Тросник"
+        },
+        {
+            "Key": "sand",
+            "EN": "Sand",
+            "RU": "Песок"
+        },
+        {
+            "Key": "stone",
+            "EN": "Stone",
+            "RU": "Камень"
+        },
+        {
+            "Key": "grass",
+            "EN": "Grass",
+            "RU": "Трава"
+        }
+    ]
+}

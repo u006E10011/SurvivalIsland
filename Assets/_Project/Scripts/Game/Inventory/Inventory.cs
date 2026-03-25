@@ -45,6 +45,7 @@ namespace Ryadevn
         {
             YG2.saves.InventorySaveData.AddResource(data);
             YG2.SaveProgress();
+            InventoryAddedInfo.OnShow(data as HarvestableSaveData);
             UpdateInventory(data);
         }
 

@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::YTools.LocalizationData
   Type: 2
   Font: {fileID: 0}
-  JsonData: {fileID: 0}
+  JsonData: {fileID: 4900000, guid: 48c3636b860ab41499057ecc0ce73dec, type: 3}
   Data: []
+  JsonPath: Assets\_Project\Resources\YTools
+  JsonName: items
