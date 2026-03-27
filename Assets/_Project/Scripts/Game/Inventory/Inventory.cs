@@ -9,6 +9,7 @@ namespace Ryadevn
     {
         public static Action<InventorySaveDataBase> OnAdd;
         public static Action<InventorySaveDataBase> OnRemove;
+        public static Action<InventorySaveDataBase> OnUpdateInventory;
 
         [SerializeField] private InventoryItem _item;
         [SerializeField] private Transform _container;
@@ -58,6 +59,8 @@ namespace Ryadevn
 
         private void UpdateInventory(InventorySaveDataBase data)
         {
+            OnUpdateInventory?.Invoke(data);
+
             var key = (data.Type.GetType(), Convert.ToInt32(data.Type));
 
             if (_items.TryGetValue(key, out InventoryItem item))

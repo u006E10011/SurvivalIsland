@@ -7,5 +7,6 @@ namespace YG
     {
         public InventorySaveContainer InventorySaveData = new();
         public List<EquipmentTask> EquipmentTask = new();
+        public List<string> Maps = new();
     }
 }
