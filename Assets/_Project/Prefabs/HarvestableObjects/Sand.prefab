@@ -388,6 +388,13 @@ MonoBehaviour:
   - {fileID: 6271907450979804186}
   - {fileID: 4709473537207953033}
   - {fileID: 8681786570743187571}
+  _animation:
+    _scaleDuration: 0.2
+    _scaleAmount: 0.9
+    _scaleEaseStart: 27
+    _scaleEaseEnd: 6
+    _targetRotation: {x: 3, y: 0, z: 3}
+    _rotationEase: 6
 --- !u!1 &8417632018742638374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3837746590213254649, guid: 06939991e5dc48947a816b0c43b5beee, type: 3}

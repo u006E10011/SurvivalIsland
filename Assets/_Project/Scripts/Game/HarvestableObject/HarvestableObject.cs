@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using YTools;
 using Gaskellgames;
+using DG.Tweening;
 
 namespace Ryadevn
 {
@@ -19,14 +20,19 @@ namespace Ryadevn
         private WaitForSeconds _delayToGrowth;
         private Coroutine _growth;
         private HarvestableObjectData _data;
+        private AnimationGetDamage _animation;
 
         private void Awake()
         {
             _data = Resources.Load<HarvestableObjectData>("Data/" + nameof(HarvestableObjectData));
             _growthTime = new(_data.GrowthTime);
             _delayToGrowth = new(_data.DelayToGrowth);
-            _currentLevel = _segments.Count-1;
+            _currentLevel = _segments.Count - 1;
+            _animation = new(_data, transform);
         }
+
+        [Button]
+        public void PlayHitAnimation() => _animation.PlayHitAnimation();
 
         [Button]
         public void TakeDamage()
@@ -36,6 +42,7 @@ namespace Ryadevn
 
             _segments[_currentLevel].Destruction();
             _currentLevel--;
+            _animation.PlayHitAnimation();
 
             if (_growth != null)
                 StopCoroutine(_growth);

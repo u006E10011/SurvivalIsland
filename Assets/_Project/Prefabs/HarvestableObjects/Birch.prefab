@@ -2747,6 +2747,13 @@ MonoBehaviour:
   - {fileID: 3376162716313330992}
   - {fileID: 4396319982337413632}
   - {fileID: 4311568049051387277}
+  _animation:
+    _scaleDuration: 0.2
+    _scaleAmount: 0.9
+    _scaleEaseStart: 27
+    _scaleEaseEnd: 6
+    _targetRotation: {x: 3, y: 0, z: 3}
+    _rotationEase: 6
 --- !u!65 &3001265552268584904
 BoxCollider:
   m_ObjectHideFlags: 0

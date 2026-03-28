@@ -950,6 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd684c5acf558342bcbcc52950b731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.MapUnlocker
+  _display: {fileID: 0}
 --- !u!65 &1005961112
 BoxCollider:
   m_ObjectHideFlags: 0

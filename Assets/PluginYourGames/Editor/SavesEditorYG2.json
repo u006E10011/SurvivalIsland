@@ -7,50 +7,38 @@
         false,
         false
     ],
-    "idSave": 248,
+    "idSave": 320,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 48,
+                "_amount": 99,
                 "ResourceType": 1
             },
             {
-                "_amount": 70,
+                "_amount": 85,
                 "ResourceType": 2
             },
             {
-                "_amount": 60,
+                "_amount": 72,
                 "ResourceType": 4
             },
             {
-                "_amount": 39,
+                "_amount": 52,
                 "ResourceType": 8
             },
             {
-                "_amount": 48,
+                "_amount": 66,
                 "ResourceType": 16
             }
         ],
         "CraftedResources": [
             {
-                "_amount": 224,
+                "_amount": 312,
                 "ResourceType": 0
             }
         ]
     },
-    "EquipmentTask": [
-        {
-            "Count": 44,
-            "CraftedResource": {
-                "_amount": 0,
-                "ResourceType": 0
-            },
-            "HarvestableResource": {
-                "_amount": 0,
-                "ResourceType": 1
-            }
-        }
-    ],
+    "EquipmentTask": [],
     "Maps": [
         "first"
     ]

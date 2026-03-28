@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sample_Attribute_EnumButtons
   m_EditorClassIdentifier: 
   enumButtons: 0
-  enumButtonsNoLabel: 0
+  enumButtonsNoLabel: 2
   enumFlags: -1
