@@ -3150,17 +3150,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 1188030828}
     m_Modifications:
     - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
+      propertyPath: _tools.Array.data[0].Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 5f495509b67bdbe409078b02eae7ff41, type: 3}
+    - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
       propertyPath: _tools.Array.data[0].Tool
       value: 
       objectReference: {fileID: 7409933334697401057}
+    - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
+      propertyPath: _tools.Array.data[1].Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 89f902ac9ef45324a84175d8a8e0b6d9, type: 3}
     - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
       propertyPath: _tools.Array.data[1].Tool
       value: 
       objectReference: {fileID: 5510773076379002742}
     - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
+      propertyPath: _tools.Array.data[2].Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d64d745d6426094baa50ba00f3419d3, type: 3}
+    - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
       propertyPath: _tools.Array.data[2].Tool
       value: 
       objectReference: {fileID: 3060644424569423791}
+    - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
+      propertyPath: _tools.Array.data[3].Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 12283f6481291e949affeefcddbb023a, type: 3}
     - target: {fileID: 1304162509637487218, guid: 6af188790025c9b49895c0938d5116bc, type: 3}
       propertyPath: _tools.Array.data[3].Tool
       value: 

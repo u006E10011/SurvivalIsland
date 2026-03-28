@@ -13,13 +13,87 @@ MonoBehaviour:
   m_Name: EquipmentData
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.CraftData
   Recipes:
-  - CraftType: 0
+  - Name: Tree (1) -> Board (2)
+    CraftType: 0
     CraftedAmount: 2
     CraftedRate: 0.5
     HarvestableType: 1
     CraftPrice: 1
-  - CraftType: 1
+  - Name: Stone (2) -> CrushedStone (1)
+    CraftType: 1
     CraftedAmount: 1
     CraftedRate: 0.5
     HarvestableType: 2
+    CraftPrice: 2
+  - Name: Sand (2) -> Glass (1)
+    CraftType: 2
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 4
+    CraftPrice: 2
+  - Name: Grass (2) -> DryGrass (1)
+    CraftType: 3
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 8
+    CraftPrice: 2
+  - Name: SugarCane (2) -> Sugar (1)
+    CraftType: 4
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 16
+    CraftPrice: 2
+  - Name: IronOre (2) -> Iron (1)
+    CraftType: 5
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 32
+    CraftPrice: 2
+  - Name: GoldOre (2) -> Gold (1)
+    CraftType: 6
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 64
+    CraftPrice: 2
+  - Name: CopperOre (2) -> Copper (1)
+    CraftType: 7
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 128
+    CraftPrice: 2
+  - Name: DiamondOre (2) -> Diamond (1)
+    CraftType: 8
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 256
+    CraftPrice: 2
+  - Name: Bamboo (2) -> Paper (1)
+    CraftType: 9
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 1024
+    CraftPrice: 2
+  - Name: Clay (2) -> Brick (1)
+    CraftType: 10
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 2048
+    CraftPrice: 2
+  - Name: Dice (2) -> Fertilizer (1)
+    CraftType: 11
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 4096
+    CraftPrice: 2
+  - Name: Wheat (2) -> Flour (1)
+    CraftType: 12
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 8192
+    CraftPrice: 2
+  - Name: Cotton (2) -> Silk (1)
+    CraftType: 13
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 16384
     CraftPrice: 2
