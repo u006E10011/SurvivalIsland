@@ -15,6 +15,11 @@ MonoBehaviour:
   Recipes:
   - CraftType: 0
     CraftedAmount: 2
-    CraftedRate: 7
+    CraftedRate: 0.5
     HarvestableType: 1
     CraftPrice: 1
+  - CraftType: 1
+    CraftedAmount: 1
+    CraftedRate: 0.5
+    HarvestableType: 2
+    CraftPrice: 2

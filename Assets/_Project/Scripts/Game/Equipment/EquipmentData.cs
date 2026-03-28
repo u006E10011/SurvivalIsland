@@ -8,11 +8,19 @@ namespace Ryadevn
     public class EquipmentData : ScriptableObject
     {
         public List<CraftRecipe> Recipes = new();
+
+        private void OnValidate()
+        {
+            foreach (var recipe in Recipes)
+                recipe.Name = $"{recipe.HarvestableType} ({recipe.CraftPrice}) -> {recipe.CraftType} ({recipe.CraftedAmount})";
+        }
     }
 
     [System.Serializable]
     public class CraftRecipe
     {
+        [HideInInspector] public string Name;
+
         [Title("Crafted")]
         public CraftedResourceType CraftType;
         public int CraftedAmount = 1;
