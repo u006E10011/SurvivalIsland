@@ -12,7 +12,7 @@ namespace Ryadevn
         [SerializeField, Space(10)] private ToolBar _toolBar;
         [SerializeField] private Camera _camera;
 
-        private Collider[] _hitColliders = new Collider[20];
+        private readonly Collider[] _hitColliders = new Collider[20];
 
         private void Awake()
         {

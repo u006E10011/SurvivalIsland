@@ -7,27 +7,27 @@
         false,
         false
     ],
-    "idSave": 168,
+    "idSave": 181,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 52,
+                "_amount": 65,
                 "ResourceType": 8
             },
             {
-                "_amount": 78,
+                "_amount": 90,
                 "ResourceType": 16
             },
             {
-                "_amount": 95,
+                "_amount": 110,
                 "ResourceType": 2
             },
             {
-                "_amount": 136,
+                "_amount": 152,
                 "ResourceType": 4
             },
             {
-                "_amount": 63,
+                "_amount": 72,
                 "ResourceType": 1
             }
         ],

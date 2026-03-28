@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.Tool
   _type: 1
-  _targetObject: 2
+  _targetObject: 5090
   _clip: {fileID: 0}
   _animator: {fileID: 4834229116264588542}
 --- !u!95 &4834229116264588542

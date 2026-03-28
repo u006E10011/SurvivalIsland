@@ -3,7 +3,17 @@ guid: 4e3b8be57131ac049b7a28e5d24e6807
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ore_copper.png
+    second: {fileID: 2100000, guid: 36bdaca850fada54cb5c2624f11c4132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ore_diamond.png
+    second: {fileID: 2100000, guid: ab8838f4de8ff994681455c61c5720c7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
