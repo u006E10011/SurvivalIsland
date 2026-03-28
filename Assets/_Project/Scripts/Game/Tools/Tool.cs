@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Linq;
+using UnityEngine;
 using YTools;
 
 namespace Ryadevn
@@ -14,18 +16,46 @@ namespace Ryadevn
         public ToolsType Type => _type;
         public HarvestableObjectType TargetType => _targetObject;
 
+        private System.Action _callback;
+        private Coroutine _cooldown;
+        private WaitForSeconds _duration;
+
         private void OnValidate()
         {
             _animator ??= GetComponent<Animator>();
+            _duration = new(_animator.runtimeAnimatorController.animationClips.ToList().Find(x => x.name == $"{_type.ToString().ToLower()}_hit").length);
+        }
+
+        public void PlayHitAnimation(System.Action callback)
+        {
+            if (_cooldown != null)
+                return;
+
+            _animator.SetTrigger("hit");
+            _callback = callback;
+            _cooldown = StartCoroutine(Cooldown());
         }
 
         public void Attack()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                _animator.SetTrigger("attack");
-                AudioController.Get().Play(_clip);
-            }
+            _callback?.Invoke();
+            AudioController.Get().Play(_clip);
+        }
+
+        private IEnumerator Cooldown()
+        {
+            yield return _duration;
+            _callback = null;
+            _cooldown = null;
+        }
+
+        private void OnDisable()
+        {
+            if (_cooldown != null)
+                StopCoroutine(_cooldown);
+
+            _callback = null;
+            _cooldown = null;
         }
     }
 }

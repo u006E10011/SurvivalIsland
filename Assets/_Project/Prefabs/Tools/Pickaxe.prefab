@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4319208186028249138}
   - component: {fileID: -2152533736013493983}
   - component: {fileID: 4834229116264588542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pickaxe
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1166656, y: 0.5, z: -7.023}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6912475064901365590}
   m_Father: {fileID: 0}
@@ -80,6 +80,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4319208186028249138}
     m_Modifications:
+    - target: {fileID: -8717550298429093502, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -120,9 +124,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8263195743351469485, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7138147275579077839, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4160085298085672357, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
       propertyPath: m_Name
       value: pickaxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271710532072746811, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776510884778522482, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075492957725051326, guid: b896f17ab0df2ad49b2f2ce448ad7d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

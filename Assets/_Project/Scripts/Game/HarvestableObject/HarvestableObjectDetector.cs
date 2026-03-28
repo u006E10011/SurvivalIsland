@@ -22,7 +22,7 @@ namespace Ryadevn
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))
-                Detect();
+                _toolBar.CurrentTool.PlayHitAnimation(Detect);
         }
 
         private void Detect()
@@ -46,7 +46,6 @@ namespace Ryadevn
                 .FirstOrDefault();
 
             harvestableObject?.TakeDamage();
-            _toolBar.CurrentTool.Attack();
         }
 
 #if UNITY_EDITOR

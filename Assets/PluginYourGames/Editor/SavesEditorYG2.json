@@ -7,24 +7,28 @@
         false,
         false
     ],
-    "idSave": 75,
+    "idSave": 168,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 13,
+                "_amount": 52,
                 "ResourceType": 8
             },
             {
-                "_amount": 12,
+                "_amount": 78,
                 "ResourceType": 16
             },
             {
-                "_amount": 15,
+                "_amount": 95,
                 "ResourceType": 2
             },
             {
-                "_amount": 12,
+                "_amount": 136,
                 "ResourceType": 4
+            },
+            {
+                "_amount": 63,
+                "ResourceType": 1
             }
         ],
         "CraftedResources": [
@@ -35,5 +39,7 @@
         ]
     },
     "EquipmentTask": [],
-    "Maps": []
+    "Maps": [
+        "first"
+    ]
 }

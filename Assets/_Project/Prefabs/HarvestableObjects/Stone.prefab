@@ -281,7 +281,6 @@ GameObject:
   - component: {fileID: 6536297823707913719}
   - component: {fileID: 6964081219075473200}
   - component: {fileID: 5148860408682097471}
-  - component: {fileID: 4821308287161291461}
   - component: {fileID: 8717868772927242392}
   m_Layer: 8
   m_Name: Stone (7)
@@ -362,27 +361,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4821308287161291461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3582397847743298527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81eea82f981b7624a85e7237ab439ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObject
-  _type: 2
-  _segments: []
-  _animation:
-    _scaleDuration: 0.2
-    _scaleAmount: 0.8
-    _scaleEaseStart: 27
-    _scaleEaseEnd: 24
-    _targetRotation: {x: 5, y: 0, z: 5}
-    _rotationEase: 6
 --- !u!65 &8717868772927242392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -843,7 +821,6 @@ GameObject:
   - component: {fileID: 2200388795141692404}
   - component: {fileID: 2514777912971923552}
   - component: {fileID: 5449941195314483743}
-  - component: {fileID: 8161570124947195153}
   - component: {fileID: 7190448336293468452}
   m_Layer: 8
   m_Name: Stone (2)
@@ -924,27 +901,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8161570124947195153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7725896317605148202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81eea82f981b7624a85e7237ab439ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ryadevn.HarvestableObject
-  _type: 2
-  _segments: []
-  _animation:
-    _scaleDuration: 0.2
-    _scaleAmount: 0.8
-    _scaleEaseStart: 27
-    _scaleEaseEnd: 24
-    _targetRotation: {x: 5, y: 0, z: 5}
-    _rotationEase: 6
 --- !u!65 &7190448336293468452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1019,10 +975,3 @@ MonoBehaviour:
   - {fileID: 607732597356028893}
   - {fileID: 3908848718310613212}
   - {fileID: 3713841349623552989}
-  _animation:
-    _scaleDuration: 0.2
-    _scaleAmount: 0.9
-    _scaleEaseStart: 27
-    _scaleEaseEnd: 6
-    _targetRotation: {x: 3, y: 0, z: 3}
-    _rotationEase: 6
