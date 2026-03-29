@@ -55,6 +55,12 @@ namespace YTools
 
 #if UNITY_EDITOR
         [Button]
+        public void LoadJson()
+        {
+            Data = JsonUtility.FromJson<SerializationWrapper>(JsonData.text)?.Data ?? new List<LocalizationText>();
+        }
+
+        [Button]
         public void ExportToJson()
         {
             string jsonFileName = $"{JsonName}.json";

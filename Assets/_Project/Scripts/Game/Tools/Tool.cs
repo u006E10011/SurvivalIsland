@@ -1,4 +1,5 @@
-﻿using System.Collections;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using YTools;
@@ -10,23 +11,26 @@ namespace Ryadevn
         [SerializeField] private ToolsType _type;
         [SerializeField] private HarvestableObjectType _targetObject;
 
-        [SerializeField, Space(10)] private AudioClip _clip;
+        [SerializeField, Space(10)] private List<AudioClip> _clips = new();
         [SerializeField] private Animator _animator;
 
         public ToolsType Type => _type;
         public HarvestableObjectType TargetType => _targetObject;
 
-        private System.Action _callback;
+        private System.Func<bool> _callback;
         private Coroutine _cooldown;
         private WaitForSeconds _duration;
+        private Audio _audio;
 
         private void OnValidate()
         {
             _animator ??= GetComponent<Animator>();
             _duration = new(_animator.runtimeAnimatorController.animationClips.ToList().Find(x => x.name == $"{_type.ToString().ToLower()}_hit").length);
         }
+		
+		public void Start() => _audio = AudioController.Get();
 
-        public void PlayHitAnimation(System.Action callback)
+        public void PlayHitAnimation(System.Func<bool> callback)
         {
             if (_cooldown != null)
                 return;
@@ -38,8 +42,8 @@ namespace Ryadevn
 
         public void Attack()
         {
-            _callback?.Invoke();
-            AudioController.Get().Play(_clip);
+            if ((bool)_callback?.Invoke() && _clips.Count > 0)
+                _audio.PlayOneShot(_clips[Random.Range(0, _clips.Count)]);
         }
 
         private IEnumerator Cooldown()

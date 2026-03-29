@@ -17,15 +17,41 @@ MonoBehaviour:
   DurationAnimation: 0.3
   EaseGrowth: 11
   EaseDestruction: 27
+  ScaleDuration: 0.2
+  ScaleAmount: 0.9
+  ScaleEaseStart: 27
+  ScaleEaseEnd: 6
+  TargetRotation: {x: 3, y: 0, z: 3}
+  RotationEase: 6
   HarvestDrop:
     _serializedList:
     - Key: 1
       Value: 3
     - Key: 2
-      Value: 5
+      Value: 2
     - Key: 4
-      Value: 4
+      Value: 3
     - Key: 8
-      Value: 13
+      Value: 4
     - Key: 16
-      Value: 6
+      Value: 2
+    - Key: 32
+      Value: 2
+    - Key: 64
+      Value: 2
+    - Key: 128
+      Value: 2
+    - Key: 256
+      Value: 2
+    - Key: 512
+      Value: 3
+    - Key: 1024
+      Value: 0
+    - Key: 2048
+      Value: 0
+    - Key: 4096
+      Value: 0
+    - Key: 8192
+      Value: 0
+    - Key: 16384
+      Value: 0

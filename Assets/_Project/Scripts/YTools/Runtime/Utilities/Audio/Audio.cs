@@ -38,6 +38,22 @@ namespace YTools
             return this;
         }
 
+        public Audio PlayOneShot(AudioClip clip, float volume = 1, float pitch = 1, AudioMixerGroup mixer = null)
+        {
+            if (clip == null)
+            {
+                Message.Send($"Clip is null".Color(ColorType.Cyan));
+                return this;
+            }
+
+            _source.volume = volume;
+            _source.pitch = pitch;
+            _source.outputAudioMixerGroup = mixer;
+            _source.PlayOneShot(clip);
+
+            return this;
+        }
+
         public Audio Play(string key, float volume = 1, float pitch = 1, AudioMixerGroup mixer = null)
         {
             Play(_data.Get(key.ToLower().Trim()), volume, pitch, mixer);

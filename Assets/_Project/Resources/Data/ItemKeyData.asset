@@ -24,7 +24,53 @@ MonoBehaviour:
       Value: grass
     - Key: 16
       Value: cane
+    - Key: 32
+      Value: ore_iron
+    - Key: 64
+      Value: ore_gold
+    - Key: 128
+      Value: ore_copper
+    - Key: 256
+      Value: ore_diamond
+    - Key: 512
+      Value: coal
+    - Key: 1024
+      Value: bamboo
+    - Key: 2048
+      Value: clay
+    - Key: 4096
+      Value: dice
+    - Key: 8192
+      Value: wheat
+    - Key: 16384
+      Value: cotton
   CraftedKey:
     _serializedList:
     - Key: 0
       Value: board
+    - Key: 1
+      Value: crushed_stone
+    - Key: 2
+      Value: glass
+    - Key: 3
+      Value: dry_grass
+    - Key: 4
+      Value: sugar
+    - Key: 5
+      Value: iron
+    - Key: 6
+      Value: gold
+    - Key: 7
+      Value: copper
+    - Key: 8
+      Value: diamond
+    - Key: 9
+      Value: paper
+    - Key: 10
+      Value: brick
+    - Key: 11
+      Value: fertilizer
+    - Key: 12
+      Value: flour
+    - Key: 13
+      Value: silk

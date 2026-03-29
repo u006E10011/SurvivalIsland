@@ -24,6 +24,126 @@
             "Key": "grass",
             "EN": "Grass",
             "RU": "Трава"
+        },
+        {
+            "Key": "ore_iron",
+            "EN": "Железная руда",
+            "RU": "Iron ore"
+        },
+        {
+            "Key": "ore_gold",
+            "EN": "Золотая руда",
+            "RU": "Gold ore"
+        },
+        {
+            "Key": "ore_copper",
+            "EN": "Медная руда",
+            "RU": "Copper ore"
+        },
+        {
+            "Key": "ore_diamond",
+            "EN": "Алмазная руда",
+            "RU": "Diamond ore"
+        },
+        {
+            "Key": "coal",
+            "EN": "Уголь",
+            "RU": "Coal"
+        },
+        {
+            "Key": "bamboo",
+            "EN": "Бамбук",
+            "RU": "Bamboo"
+        },
+        {
+            "Key": "clay",
+            "EN": "Глина",
+            "RU": "Clay"
+        },
+        {
+            "Key": "dice",
+            "EN": "Кость",
+            "RU": "Dice"
+        },
+        {
+            "Key": "wheat",
+            "EN": "Пшеница",
+            "RU": "Wheat"
+        },
+        {
+            "Key": "cotton",
+            "EN": "Хлопок",
+            "RU": "Cotton"
+        },
+        {
+            "Key": "board",
+            "EN": "Доска",
+            "RU": "Board"
+        },
+        {
+            "Key": "crushed_stone",
+            "EN": "Щебень",
+            "RU": "Crushed stone"
+        },
+        {
+            "Key": "glass",
+            "EN": "Стекло",
+            "RU": "Glass"
+        },
+        {
+            "Key": "dry_grass",
+            "EN": "Сухая трава",
+            "RU": "Dry grass"
+        },
+        {
+            "Key": "sugar",
+            "EN": "Сахар",
+            "RU": "Sugar"
+        },
+        {
+            "Key": "iron",
+            "EN": "Железо",
+            "RU": "Iron"
+        },
+        {
+            "Key": "gold",
+            "EN": "Золото",
+            "RU": "Gold"
+        },
+        {
+            "Key": "copper",
+            "EN": "Медь",
+            "RU": "Copper"
+        },
+        {
+            "Key": "diamond",
+            "EN": "Алмаз",
+            "RU": "Diamond"
+        },
+        {
+            "Key": "paper",
+            "EN": "Бумага",
+            "RU": "Paper"
+        },
+        {
+            "Key": "brick",
+            "EN": "Кирпич",
+            "RU": "Brick"
+        },
+        {
+            "Key": "fertilizer",
+            "EN": "Удобрение",
+            "RU": "Fertilizer"
+        },
+        {
+            "Key": "flour",
+            "EN": "Мука",
+            "RU": "Flour"
+        },
+        {
+            "Key": "silk",
+            "EN": "Шёлк",
+            "RU": "Silk"
         }
     ]
 }

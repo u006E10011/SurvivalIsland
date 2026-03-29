@@ -7,33 +7,53 @@
         false,
         false
     ],
-    "idSave": 181,
+    "idSave": 152,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 65,
-                "ResourceType": 8
-            },
-            {
-                "_amount": 90,
-                "ResourceType": 16
-            },
-            {
-                "_amount": 110,
+                "_amount": 36,
                 "ResourceType": 2
             },
             {
-                "_amount": 152,
+                "_amount": 21,
                 "ResourceType": 4
             },
             {
-                "_amount": 72,
+                "_amount": 17,
+                "ResourceType": 8
+            },
+            {
+                "_amount": 22,
+                "ResourceType": 16
+            },
+            {
+                "_amount": 28,
+                "ResourceType": 256
+            },
+            {
+                "_amount": 22,
+                "ResourceType": 128
+            },
+            {
+                "_amount": 36,
+                "ResourceType": 512
+            },
+            {
+                "_amount": 26,
+                "ResourceType": 64
+            },
+            {
+                "_amount": 30,
+                "ResourceType": 32
+            },
+            {
+                "_amount": 21,
                 "ResourceType": 1
             }
         ],
         "CraftedResources": [
             {
-                "_amount": 1134,
+                "_amount": 370,
                 "ResourceType": 0
             }
         ]

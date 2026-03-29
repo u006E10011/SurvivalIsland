@@ -25,17 +25,17 @@ namespace Ryadevn
                 _toolBar.CurrentTool.PlayHitAnimation(Detect);
         }
 
-        private void Detect()
+        private bool Detect()
         {
             var ray = new Ray(_camera.transform.position, _camera.transform.forward);
 
             if (!Physics.Raycast(ray, out var hitInfo, _maxDistance, _harvestableLayer, QueryTriggerInteraction.Collide))
-                return;
+                return false;
 
             var hitCount = Physics.OverlapSphereNonAlloc(hitInfo.point, _radius, _hitColliders, _harvestableLayer, QueryTriggerInteraction.Collide);
 
             if (hitCount == 0)
-                return;
+                return false;
 
             var harvestableObject = _hitColliders
                 .Take(hitCount)
@@ -46,6 +46,7 @@ namespace Ryadevn
                 .FirstOrDefault();
 
             harvestableObject?.TakeDamage();
+            return true;
         }
 
 #if UNITY_EDITOR

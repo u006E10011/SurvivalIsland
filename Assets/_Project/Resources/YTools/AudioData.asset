@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: AudioData
   m_EditorClassIdentifier: Assembly-CSharp::YTools.AudioData
   Preload: 10
-  Clip: []
+  Clip:
+  - Key: unlock_map
+    Clip: {fileID: 8300000, guid: 776d68704e32e644faafbe3f022a9a47, type: 3}

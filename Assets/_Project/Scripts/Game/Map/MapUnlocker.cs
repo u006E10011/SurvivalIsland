@@ -36,17 +36,18 @@ namespace Ryadevn
                 _conditions.Add(new CraftedResourceSaveData(item.Key, item.Value));
         }
 
-        private void TryUnlock()
+        private bool TryUnlock()
         {
             var harvestable = _data.HarvestableCondition.Any(x => x.Value > Inventory.GetResourceAmount(x.Key));
             var crafted = _data.CraftedCondition.Any(x => x.Value > Inventory.GetResourceAmount(x.Key));
 
             if (harvestable || crafted)
-                return;
+                return false;
 
             YG.YG2.saves.Maps.Add(_data.ID);
             YTools.AudioController.Get().Play("unlock_map");
             _conditions.ForEach(item => Inventory.OnRemove?.Invoke(item));
+            return true;
         }
 
         private void Animation()
@@ -58,8 +59,8 @@ namespace Ryadevn
 
         private void OnTriggerEnter(Collider other)
         {
-            TryUnlock();
-            Animation();
+            if (TryUnlock())
+                Animation();
         }
     }
 }
