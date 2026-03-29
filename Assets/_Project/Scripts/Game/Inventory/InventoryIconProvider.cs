@@ -7,21 +7,24 @@ namespace Ryadevn
     internal class InventoryIconProvider
     {
         private readonly static List<Sprite> _icons = new();
+        private readonly static ItemKeyData _keyData;
 
         static InventoryIconProvider()
         {
             _icons = Resources.LoadAll<Texture2D>("InventoryIcons")
-                .Select(x => TextureToSprite(x)) .ToList();
+                .Select(x => TextureToSprite(x)).ToList();
+
+            _keyData=Resources.Load<ItemKeyData>("Data/" + nameof(ItemKeyData));
         }
 
         public static Sprite Get(InventorySaveDataBase data)
         {
-            return _icons.Find(x => x.name.Equals(data.Type.ToString().ToLower()));
+            return _icons.Find(x => x.name.Equals(_keyData.Get(data)));
         }
 
         private static Sprite TextureToSprite(Texture2D texture)
         {
-            var sprite =  Sprite.Create(
+            var sprite = Sprite.Create(
                 texture,
                 new Rect(0, 0, texture.width, texture.height),
                 new Vector2(0.5f, 0.5f),

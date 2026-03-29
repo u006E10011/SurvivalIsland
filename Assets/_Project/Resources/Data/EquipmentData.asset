@@ -16,7 +16,7 @@ MonoBehaviour:
   - Name: Tree (1) -> Board (2)
     CraftType: 0
     CraftedAmount: 2
-    CraftedRate: 0.5
+    CraftedRate: 2
     HarvestableType: 1
     CraftPrice: 1
   - Name: Stone (2) -> CrushedStone (1)
