@@ -72,7 +72,7 @@ Material:
     - _FresnelEffectEnabled: 0
     - _FresnelPower: 23.2
     - _Fresnel_Power: 23
-    - _Metallic: 0.659
+    - _Metallic: 0.564
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
