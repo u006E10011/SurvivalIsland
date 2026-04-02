@@ -41,12 +41,12 @@ namespace Ryadevn
                 .Take(hitCount)
                 .Where(x => x != null)
                 .Select(x => x.GetComponentInParent<HarvestableObject>())
-                .Where(x => x != null && (x.Type & _toolBar.CurrentTool.TargetType) == x.Type)
+                .Where(x => x != null && !x.IsDestroyed && (x.Type & _toolBar.CurrentTool.TargetType) != 0)
                 .OrderByDescending(x => Vector3.Distance(x.transform.position, hitInfo.point))
                 .FirstOrDefault();
 
             harvestableObject?.TakeDamage();
-            return true;
+            return harvestableObject != null;
         }
 
 #if UNITY_EDITOR

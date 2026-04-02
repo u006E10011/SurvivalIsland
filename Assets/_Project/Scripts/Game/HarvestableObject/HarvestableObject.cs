@@ -14,6 +14,7 @@ namespace Ryadevn
         [SerializeField] private List<HarvestableObjectSegment> _segments = new();
 
         public HarvestableObjectType Type => _type;
+        public bool IsDestroyed => _currentLevel < 0;
 
         private int _currentLevel = 0;
         private WaitForSeconds _growthTime;
