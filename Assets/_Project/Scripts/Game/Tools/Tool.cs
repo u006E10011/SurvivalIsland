@@ -1,6 +1,4 @@
-using Gaskellgames;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -13,7 +11,7 @@ namespace Ryadevn
         [SerializeField] private ToolsType _type;
         [SerializeField] private HarvestableObjectType _targetObject;
 
-        [SerializeField, Space(10)] private List<AudioClip> _clips = new();
+        [SerializeField, Space(10)] private AudioClip _clip;
         [SerializeField] private AudioMixerGroup _mixer;
         [SerializeField] private Animator _animator;
 
@@ -45,8 +43,8 @@ namespace Ryadevn
 
         public void Attack()
         {
-            if ((bool)_callback?.Invoke() && _clips.Count > 0)
-                _audio.PlayOneShot(_clips[Random.Range(0, _clips.Count)], mixer: _mixer);
+            if ((bool)_callback?.Invoke() && _clip != null)
+                _audio.PlayOneShot(_clip, pitch: Random.Range(.95f, 1f), mixer: _mixer);
         }
 
         private IEnumerator Cooldown()
