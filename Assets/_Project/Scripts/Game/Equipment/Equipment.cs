@@ -60,14 +60,15 @@ namespace Ryadevn
 
             _task.Count += craftedCount;
 
-            if (_coroutine == null)
-                StartCoroutine(UpdateProgressTask());
-
             Save();
+
+            if (_coroutine == null)
+                _coroutine = StartCoroutine(UpdateProgressTask());
         }
 
         private IEnumerator UpdateProgressTask()
         {
+            var saveData = YG2.saves.EquipmentTask.Find(x => x.CraftedResource.ResourceType == _resourceType);
             var craftedAmount = new CraftedResourceSaveData(_resourceType, _recipe.CraftedAmount);
             var time = _recipe.CraftedRate;
 
@@ -78,8 +79,9 @@ namespace Ryadevn
 
                 if (time <= 0)
                 {
-                    time = _recipe.CraftedRate;
                     _task.Count--;
+                    time = _recipe.CraftedRate;
+                    saveData.Count = _task.Count;
 
                     Inventory.OnAdd?.Invoke(craftedAmount);
                 }
