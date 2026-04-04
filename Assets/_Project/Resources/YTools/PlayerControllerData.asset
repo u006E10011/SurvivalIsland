@@ -27,7 +27,7 @@ MonoBehaviour:
     Max: 90
   Ground:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 1408
   Attachable:
     serializedVersion: 2
     m_Bits: 0
