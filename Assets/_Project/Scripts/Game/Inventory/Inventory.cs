@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using YG;
 
 namespace Ryadevn
@@ -12,14 +13,11 @@ namespace Ryadevn
         public static Action<InventorySaveDataBase> OnUpdateInventory;
 
         [SerializeField] private InventoryItem _item;
+        [SerializeField] private Button _filterButton;
         [SerializeField] private Transform _container;
 
         private readonly Dictionary<(Type enumType, int value), InventoryItem> _items = new();
-
-        private void Awake()
-        {
-            Init();
-        }
+        public InventoryPreview Preview { get; private set; }
 
         private void OnEnable()
         {
@@ -33,13 +31,15 @@ namespace Ryadevn
             OnRemove -= Remove;
         }
 
-        private void Init()
+        public void Init()
         {
             foreach (var data in YG2.saves.InventorySaveData.GetAllItems())
             {
                 if (data.Amount > 0)
                     CreateItem(data);
             }
+
+            (Preview = new(_items, _filterButton)).UpdatePreview();
         }
 
         private void Add(InventorySaveDataBase data)
@@ -48,6 +48,7 @@ namespace Ryadevn
             YG2.SaveProgress();
             InventoryAddedInfo.OnShow(data as HarvestableSaveData);
             UpdateInventory(data);
+            Preview.UpdatePreview();
         }
 
         private void Remove(InventorySaveDataBase data)
@@ -55,6 +56,7 @@ namespace Ryadevn
             YG2.saves.InventorySaveData.RemoveResource(data);
             YG2.SaveProgress();
             UpdateInventory(data);
+            Preview.UpdatePreview();
         }
 
         private void UpdateInventory(InventorySaveDataBase data)

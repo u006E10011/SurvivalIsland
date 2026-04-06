@@ -34,6 +34,8 @@ namespace Ryadevn
 
             foreach (var item in _data.CraftedCondition)
                 _conditions.Add(new CraftedResourceSaveData(item.Key, item.Value));
+
+            InventoryPreview.OnRegister?.Invoke(_conditions);
         }
 
         private bool TryUnlock()
@@ -46,7 +48,9 @@ namespace Ryadevn
 
             YG.YG2.saves.Maps.Add(_data.ID);
             YTools.AudioController.Get().Play("unlock_map");
+            InventoryPreview.OnUnregister?.Invoke(_conditions);
             _conditions.ForEach(item => Inventory.OnRemove?.Invoke(item));
+
             return true;
         }
 

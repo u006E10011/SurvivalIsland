@@ -15,12 +15,11 @@ namespace Ryadevn
             MapUtils.Register(_mapUnlocker, this);
         }
 
-        private void Awake()
+        public void Init()
         {
-            _mapUnlocker.Init(this, _data);
-
-            if (_data != null)
+            if (_data != null && !YG.YG2.saves.Maps.Contains(_data.ID))
             {
+                _mapUnlocker.Init(this, _data);
                 var isUnlock = _data.IsUnloced;
                 transform.localScale = isUnlock ? Vector3.one : Vector3.zero;
                 gameObject.SetActive(isUnlock);

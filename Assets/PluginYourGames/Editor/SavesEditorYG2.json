@@ -7,70 +7,74 @@
         false,
         false
     ],
-    "idSave": 1206,
+    "idSave": 104,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 98,
-                "ResourceType": 2
-            },
-            {
-                "_amount": 222,
-                "ResourceType": 4
-            },
-            {
-                "_amount": 145,
-                "ResourceType": 8
-            },
-            {
-                "_amount": 102,
-                "ResourceType": 16
-            },
-            {
-                "_amount": 168,
-                "ResourceType": 256
-            },
-            {
-                "_amount": 172,
-                "ResourceType": 128
-            },
-            {
-                "_amount": 219,
-                "ResourceType": 512
-            },
-            {
-                "_amount": 148,
-                "ResourceType": 64
-            },
-            {
-                "_amount": 148,
-                "ResourceType": 32
+                "_amount": 41,
+                "ResourceType": 1
             },
             {
                 "_amount": 12,
-                "ResourceType": 2048
+                "ResourceType": 2
             },
             {
-                "_amount": 20,
-                "ResourceType": 4096
+                "_amount": 15,
+                "ResourceType": 4
             },
             {
-                "_amount": 56,
-                "ResourceType": 8192
+                "_amount": 12,
+                "ResourceType": 128
             },
             {
-                "_amount": 8,
+                "_amount": 2,
                 "ResourceType": 16384
             },
             {
-                "_amount": 18,
-                "ResourceType": 1
+                "_amount": 12,
+                "ResourceType": 8192
+            },
+            {
+                "_amount": 12,
+                "ResourceType": 8
+            },
+            {
+                "_amount": 9,
+                "ResourceType": 2048
+            },
+            {
+                "_amount": 9,
+                "ResourceType": 512
+            },
+            {
+                "_amount": 6,
+                "ResourceType": 256
+            },
+            {
+                "_amount": 6,
+                "ResourceType": 64
+            },
+            {
+                "_amount": 6,
+                "ResourceType": 32
+            },
+            {
+                "_amount": 3,
+                "ResourceType": 4096
             }
         ],
         "CraftedResources": [
             {
-                "_amount": 978,
+                "_amount": 16,
                 "ResourceType": 0
+            },
+            {
+                "_amount": 3,
+                "ResourceType": 11
+            },
+            {
+                "_amount": 32,
+                "ResourceType": 5
             }
         ]
     },
