@@ -7,11 +7,11 @@
         false,
         false
     ],
-    "idSave": 104,
+    "idSave": 149,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 41,
+                "_amount": 14,
                 "ResourceType": 1
             },
             {
@@ -27,15 +27,15 @@
                 "ResourceType": 128
             },
             {
-                "_amount": 2,
+                "_amount": 4,
                 "ResourceType": 16384
             },
             {
-                "_amount": 12,
+                "_amount": 16,
                 "ResourceType": 8192
             },
             {
-                "_amount": 12,
+                "_amount": 16,
                 "ResourceType": 8
             },
             {
@@ -51,34 +51,50 @@
                 "ResourceType": 256
             },
             {
-                "_amount": 6,
+                "_amount": 8,
                 "ResourceType": 64
             },
             {
-                "_amount": 6,
+                "_amount": 2,
                 "ResourceType": 32
             },
             {
-                "_amount": 3,
+                "_amount": 2,
                 "ResourceType": 4096
+            },
+            {
+                "_amount": 6,
+                "ResourceType": 16
             }
         ],
         "CraftedResources": [
             {
-                "_amount": 16,
+                "_amount": 50,
                 "ResourceType": 0
             },
             {
-                "_amount": 3,
+                "_amount": 4,
                 "ResourceType": 11
             },
             {
-                "_amount": 32,
+                "_amount": 34,
                 "ResourceType": 5
             }
         ]
     },
-    "EquipmentTask": [],
+    "EquipmentTask": [
+        {
+            "Count": 19,
+            "CraftedResource": {
+                "_amount": 0,
+                "ResourceType": 0
+            },
+            "HarvestableResource": {
+                "_amount": 0,
+                "ResourceType": 1
+            }
+        }
+    ],
     "Maps": [
         "first"
     ]

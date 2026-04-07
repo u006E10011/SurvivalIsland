@@ -112,5 +112,10 @@ namespace Ryadevn
         {
             return GetResourceAmount(type) >= amount;
         }
+
+        private void OnDestroy()
+        {
+            Preview.Dispose();
+        }
     }
 }
