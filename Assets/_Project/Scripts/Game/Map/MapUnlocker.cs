@@ -51,20 +51,21 @@ namespace Ryadevn
             InventoryPreview.OnUnregister?.Invoke(_conditions);
             _conditions.ForEach(item => Inventory.OnRemove?.Invoke(item));
 
+            Animation();
+            Destroy(gameObject);
+
             return true;
         }
 
         private void Animation()
         {
             _map.gameObject.SetActive(true);
-            _map.transform.DOScale(1, _data.Duration).SetEase(_data.Ease).SetLink(_map.gameObject)
-                .OnComplete(() => Destroy(gameObject));
+            _map.transform.DOScale(1, _data.Duration).SetEase(_data.Ease).SetLink(_map.gameObject);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (TryUnlock())
-                Animation();
+            TryUnlock();
         }
     }
 }

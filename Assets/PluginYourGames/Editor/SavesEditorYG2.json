@@ -7,7 +7,7 @@
         false,
         false
     ],
-    "idSave": 15,
+    "idSave": 29,
     "InventorySaveData": {
         "HarvestableResources": [
             {
@@ -15,12 +15,12 @@
                 "ResourceType": 1
             },
             {
-                "_amount": 2,
+                "_amount": 6,
                 "ResourceType": 2
             },
             {
-                "_amount": 4,
-                "ResourceType": 64
+                "_amount": 6,
+                "ResourceType": 4096
             }
         ],
         "CraftedResources": []

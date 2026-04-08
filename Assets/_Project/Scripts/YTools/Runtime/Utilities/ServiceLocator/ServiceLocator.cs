@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Mono.Cecil.Cil;
+using System.Collections.Generic;
 
 namespace YTools
 {
@@ -22,6 +23,21 @@ namespace YTools
             }
 
             return (T)_services[key];
+        }
+
+        public bool TryGet<T>(out T service) where T : IService
+        {
+            string key = typeof(T).Name;
+
+            if (!_services.ContainsKey(key))
+            {
+                UnityEngine.Debug.LogError($"{key.Color(ColorType.Cyan)} not services");
+                service = default;
+                return false;
+            }
+
+            service = (T)_services[key];
+            return true;
         }
 
         public void Register<T>(T service) where T : IService

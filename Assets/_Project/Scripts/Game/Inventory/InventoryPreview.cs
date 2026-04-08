@@ -15,17 +15,20 @@ namespace Ryadevn
         private readonly Button _filterButton;
 
         private bool _toggleFilter;
+        private Image _toggleIcon;
 
         public InventoryPreview(Dictionary<(Type enumType, int value), InventoryItem> items, Button button)
         {
             _items = items;
             _filterButton = button;
 
+            _toggleIcon = button.transform.GetChild(0).GetComponent<Image>();
+
             OnRegister += Register;
             OnUnregister += Unregister;
 
             _filterButton.onClick.AddListener(ToggleFilter);
-            _filterButton.image.color = _toggleFilter ? Color.green : Color.white;
+            _toggleIcon.enabled = _toggleFilter;
         }
 
         public void UpdatePreview()
@@ -37,7 +40,7 @@ namespace Ryadevn
         private void ToggleFilter()
         {
             _toggleFilter = !_toggleFilter;
-            _filterButton.image.color = _toggleFilter ? Color.green : Color.white;
+            _toggleIcon.enabled = _toggleFilter;
             UpdatePreview();
         }
 
