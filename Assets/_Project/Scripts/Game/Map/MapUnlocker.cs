@@ -66,10 +66,5 @@ namespace Ryadevn
             if (TryUnlock())
                 Animation();
         }
-
-        private void OnDrawGizmosSelected()
-        {
-            MapUtils.DrawGizmos(this);
-        }
     }
 }

@@ -7,80 +7,23 @@
         false,
         false
     ],
-    "idSave": 192,
+    "idSave": 15,
     "InventorySaveData": {
         "HarvestableResources": [
             {
-                "_amount": 26,
+                "_amount": 33,
                 "ResourceType": 1
             },
             {
-                "_amount": 12,
+                "_amount": 2,
                 "ResourceType": 2
             },
             {
-                "_amount": 15,
-                "ResourceType": 4
-            },
-            {
-                "_amount": 18,
-                "ResourceType": 128
-            },
-            {
                 "_amount": 4,
-                "ResourceType": 16384
-            },
-            {
-                "_amount": 16,
-                "ResourceType": 8192
-            },
-            {
-                "_amount": 16,
-                "ResourceType": 8
-            },
-            {
-                "_amount": 18,
-                "ResourceType": 2048
-            },
-            {
-                "_amount": 9,
-                "ResourceType": 512
-            },
-            {
-                "_amount": 12,
-                "ResourceType": 256
-            },
-            {
-                "_amount": 20,
                 "ResourceType": 64
-            },
-            {
-                "_amount": 10,
-                "ResourceType": 32
-            },
-            {
-                "_amount": 2,
-                "ResourceType": 4096
-            },
-            {
-                "_amount": 6,
-                "ResourceType": 16
             }
         ],
-        "CraftedResources": [
-            {
-                "_amount": 88,
-                "ResourceType": 0
-            },
-            {
-                "_amount": 4,
-                "ResourceType": 11
-            },
-            {
-                "_amount": 34,
-                "ResourceType": 5
-            }
-        ]
+        "CraftedResources": []
     },
     "EquipmentTask": [],
     "Maps": [
